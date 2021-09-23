@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbaea5f291523dd4191acbb6c6a7e2bf, type: 3}
+  m_Name: Solstice
+  m_EditorClassIdentifier: 
+  primary: {r: 1, g: 0.983102, b: 0, a: 1}
+  secondary: {r: 0.19188322, g: 0.44686544, b: 0.5283019, a: 1}
+  tertiary: {r: 0.9245283, g: 0.58644414, b: 0.33579564, a: 1}
+  additional: {r: 1, g: 0.98682547, b: 0.514151, a: 1}

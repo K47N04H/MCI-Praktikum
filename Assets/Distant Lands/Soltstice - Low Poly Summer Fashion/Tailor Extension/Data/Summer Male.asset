@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa2db96c55cb3b429361471eb3e57b2, type: 3}
+  m_Name: Summer Male
+  m_EditorClassIdentifier: 
+  animationAvatar: {fileID: 9000000, guid: 98f0400cfb8db5b4484d2837fefd30e2, type: 3}
+  rootBoneName: Male
+  headMeshes:
+  - {fileID: 11400000, guid: bc7ff7bb8d37fe847b8485afc566db32, type: 2}
+  - {fileID: 11400000, guid: 2e93d6d2431ecd544b702553f50f8c57, type: 2}
+  - {fileID: 11400000, guid: 421cf834a467fe64eadb35331f7d6b21, type: 2}
+  - {fileID: 11400000, guid: 4dff0d8febb2f294b862c023c4d4e3f7, type: 2}
+  torsoMeshes:
+  - {fileID: 11400000, guid: 125bf5bb6edc8814083e7f7ab579ae02, type: 2}
+  - {fileID: 11400000, guid: e8326b26c28e49b459cfcccf9e913b56, type: 2}
+  - {fileID: 11400000, guid: e980f5a04b07a0f42b8b8c09bc2cc598, type: 2}
+  - {fileID: 11400000, guid: 253d967e7d838e543a4f319f6dc0ac46, type: 2}
+  - {fileID: 11400000, guid: 05a15e6f9004db841bb587d824426016, type: 2}
+  - {fileID: 11400000, guid: 2031529e55bc73b40bae1e457abee83f, type: 2}
+  - {fileID: 11400000, guid: 687ea8dded2b03d49a828034b5fe4d17, type: 2}
+  - {fileID: 11400000, guid: 7e1fa3bf86e07a643b60b1297be3d7dd, type: 2}
+  - {fileID: 11400000, guid: 9e2d4706ad58bb247b06f9350df73ee6, type: 2}
+  - {fileID: 11400000, guid: a2d97bd21ef4a6a4c91fb5d59773ec88, type: 2}
+  - {fileID: 11400000, guid: 1bc743e88baf3394ab90319a426837eb, type: 2}
+  legsMeshes:
+  - {fileID: 11400000, guid: 9d5294eb3ea59364f9389a99dd83c0bf, type: 2}
+  - {fileID: 11400000, guid: 1eab87778d162a0489a07e348970fda8, type: 2}
+  - {fileID: 11400000, guid: c3608e8305dee7743a98db2703707f5b, type: 2}
+  - {fileID: 11400000, guid: bb2b412e5f9253749a90b15adacc68a3, type: 2}
+  - {fileID: 11400000, guid: afe31f2460439644f948348b8afc2ccd, type: 2}
+  - {fileID: 11400000, guid: 6c560a527d6a03a40bf2b08e8b51e485, type: 2}
+  - {fileID: 11400000, guid: 05ee22c5dd132584fb79ced60234eaa9, type: 2}
+  shoesMeshes:
+  - {fileID: 11400000, guid: 0498b05fddb0c044bb8d933b93e7b212, type: 2}
+  - {fileID: 11400000, guid: bfd5774d692d8894c935860da8fb6cf0, type: 2}
+  - {fileID: 11400000, guid: 4c670e0fbeaaf2d4e86830f9f46a5c1a, type: 2}
+  - {fileID: 11400000, guid: 2c80a271a7d11a9408eedefc67526751, type: 2}
+  - {fileID: 11400000, guid: 45e09e3ca127e0c459d5150dd10372fd, type: 2}
+  - {fileID: 11400000, guid: f15c7a4be1b154f43bf36347d0707fca, type: 2}
+  - {fileID: 11400000, guid: 4319facfd8a958c49be4f31145e13d0c, type: 2}
+  - {fileID: 11400000, guid: 0db99e418aa84b44a982652860b2544c, type: 2}

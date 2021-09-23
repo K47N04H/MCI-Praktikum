@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: 98f0400cfb8db5b4484d2837fefd30e2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Head Male (Baseball Hat)
+    100002: Head Male (Cornrows)
+    100004: Head Male (Long Front)
+    100006: Head Male (Pushed-Back Medium)
+    100008: Legs Male (Baggy Shorts)
+    100010: Legs Male (Button Shorts)
+    100012: Legs Male (Denim Shorts)
+    100014: Legs Male (Shorts)
+    100016: Legs Male (Skinny Jeans)
+    100018: Legs Male (Swimsuit)
+    100020: Legs Male (Wetsuit)
+    100022: LowManHead
+    100024: LowManHead_end
+    100026: LowManHips
+    100028: LowManLeftArm
+    100030: LowManLeftFoot
+    100032: LowManLeftForeArm
+    100034: LowManLeftHand
+    100036: LowManLeftHandIndex1
+    100038: LowManLeftHandIndex2
+    100040: LowManLeftHandIndex2_end
+    100042: LowManLeftHandMiddle1
+    100044: LowManLeftHandMiddle2
+    100046: LowManLeftHandMiddle2_end
+    100048: LowManLeftHandPinky1
+    100050: LowManLeftHandPinky2
+    100052: LowManLeftHandPinky2_end
+    100054: LowManLeftHandRing1
+    100056: LowManLeftHandRing2
+    100058: LowManLeftHandRing2_end
+    100060: LowManLeftHandThumb1
+    100062: LowManLeftHandThumb1_end
+    100064: LowManLeftLeg
+    100066: LowManLeftShoulder
+    100068: LowManLeftToeBase
+    100070: LowManLeftToeBase_end
+    100072: LowManLeftUpLeg
+    100074: LowManNeck
+    100076: LowManRightArm
+    100078: LowManRightFoot
+    100080: LowManRightForeArm
+    100082: LowManRightHand
+    100084: LowManRightHandIndex1
+    100086: LowManRightHandIndex2
+    100088: LowManRightHandIndex2_end
+    100090: LowManRightHandMiddle1
+    100092: LowManRightHandMiddle2
+    100094: LowManRightHandMiddle2_end
+    100096: LowManRightHandPinky1
+    100098: LowManRightHandPinky2
+    100100: LowManRightHandPinky2_end
+    100102: LowManRightHandRing1
+    100104: LowManRightHandRing2
+    100106: LowManRightHandRing2_end
+    100108: LowManRightHandThumb1
+    100110: LowManRightHandThumb1_end
+    100112: LowManRightLeg
+    100114: LowManRightShoulder
+    100116: LowManRightToeBase
+    100118: LowManRightToeBase_end
+    100120: LowManRightUpLeg
+    100122: LowManSpine
+    100124: LowManSpine1
+    100126: LowManSpine2
+    100128: Male
+    100130: Shoes Male (Flip-flops)
+    100132: Shoes Male (Flippers)
+    100134: Shoes Male (High Top)
+    100136: Shoes Male (Low Top)
+    100138: Shoes Male (None)
+    100140: Shoes Male (Sandals)
+    100142: Shoes Male (Slip-on Sneakers)
+    100144: Shoes Male (Sneakers)
+    100146: //RootNode
+    100148: Torso Male (Button Down Rolled)
+    100150: Torso Male (Deep V)
+    100152: Torso Male (Hawaiian Shirt)
+    100154: Torso Male (Medium Sleeves Baseball Tee)
+    100156: Torso Male (Shirtless)
+    100158: Torso Male (Short Sleeve Henley)
+    100160: Torso Male (Short Sleeves Baseball Tee)
+    100162: Torso Male (Short Sleeves)
+    100164: Torso Male (Tanktop)
+    100166: Torso Male (V-Neck)
+    100168: Torso Male (Wetsuit)
+    400000: Head Male (Baseball Hat)
+    400002: Head Male (Cornrows)
+    400004: Head Male (Long Front)
+    400006: Head Male (Pushed-Back Medium)
+    400008: Legs Male (Baggy Shorts)
+    400010: Legs Male (Button Shorts)
+    400012: Legs Male (Denim Shorts)
+    400014: Legs Male (Shorts)
+    400016: Legs Male (Skinny Jeans)
+    400018: Legs Male (Swimsuit)
+    400020: Legs Male (Wetsuit)
+    400022: LowManHead
+    400024: LowManHead_end
+    400026: LowManHips
+    400028: LowManLeftArm
+    400030: LowManLeftFoot
+    400032: LowManLeftForeArm
+    400034: LowManLeftHand
+    400036: LowManLeftHandIndex1
+    400038: LowManLeftHandIndex2
+    400040: LowManLeftHandIndex2_end
+    400042: LowManLeftHandMiddle1
+    400044: LowManLeftHandMiddle2
+    400046: LowManLeftHandMiddle2_end
+    400048: LowManLeftHandPinky1
+    400050: LowManLeftHandPinky2
+    400052: LowManLeftHandPinky2_end
+    400054: LowManLeftHandRing1
+    400056: LowManLeftHandRing2
+    400058: LowManLeftHandRing2_end
+    400060: LowManLeftHandThumb1
+    400062: LowManLeftHandThumb1_end
+    400064: LowManLeftLeg
+    400066: LowManLeftShoulder
+    400068: LowManLeftToeBase
+    400070: LowManLeftToeBase_end
+    400072: LowManLeftUpLeg
+    400074: LowManNeck
+    400076: LowManRightArm
+    400078: LowManRightFoot
+    400080: LowManRightForeArm
+    400082: LowManRightHand
+    400084: LowManRightHandIndex1
+    400086: LowManRightHandIndex2
+    400088: LowManRightHandIndex2_end
+    400090: LowManRightHandMiddle1
+    400092: LowManRightHandMiddle2
+    400094: LowManRightHandMiddle2_end
+    400096: LowManRightHandPinky1
+    400098: LowManRightHandPinky2
+    400100: LowManRightHandPinky2_end
+    400102: LowManRightHandRing1
+    400104: LowManRightHandRing2
+    400106: LowManRightHandRing2_end
+    400108: LowManRightHandThumb1
+    400110: LowManRightHandThumb1_end
+    400112: LowManRightLeg
+    400114: LowManRightShoulder
+    400116: LowManRightToeBase
+    400118: LowManRightToeBase_end
+    400120: LowManRightUpLeg
+    400122: LowManSpine
+    400124: LowManSpine1
+    400126: LowManSpine2
+    400128: Male
+    400130: Shoes Male (Flip-flops)
+    400132: Shoes Male (Flippers)
+    400134: Shoes Male (High Top)
+    400136: Shoes Male (Low Top)
+    400138: Shoes Male (None)
+    400140: Shoes Male (Sandals)
+    400142: Shoes Male (Slip-on Sneakers)
+    400144: Shoes Male (Sneakers)
+    400146: //RootNode
+    400148: Torso Male (Button Down Rolled)
+    400150: Torso Male (Deep V)
+    400152: Torso Male (Hawaiian Shirt)
+    400154: Torso Male (Medium Sleeves Baseball Tee)
+    400156: Torso Male (Shirtless)
+    400158: Torso Male (Short Sleeve Henley)
+    400160: Torso Male (Short Sleeves Baseball Tee)
+    400162: Torso Male (Short Sleeves)
+    400164: Torso Male (Tanktop)
+    400166: Torso Male (V-Neck)
+    400168: Torso Male (Wetsuit)
+    2100000: Skin
+    2100002: Secondary
+    2100004: Additional
+    2100006: Primary
+    2100008: White Fabric
+    2100010: Fabric 1
+    2100012: Wetsuit
+    2100014: Primary Dark
+    2100016: Hair 1
+    4300000: Shoes Male (None)
+    4300002: Legs Male (Skinny Jeans)
+    4300004: Shoes Male (Sandals)
+    4300006: Torso Male (Tanktop)
+    4300008: Torso Male (Button Down Rolled)
+    4300010: Legs Male (Shorts)
+    4300012: Legs Male (Swimsuit)
+    4300014: Shoes Male (Flip-flops)
+    4300016: Shoes Male (High Top)
+    4300018: Shoes Male (Low Top)
+    4300020: Torso Male (Medium Sleeves Baseball Tee)
+    4300022: Torso Male (Short Sleeves)
+    4300024: Torso Male (Short Sleeves Baseball Tee)
+    4300026: Torso Male (Deep V)
+    4300028: Torso Male (Wetsuit)
+    4300030: Torso Male (Hawaiian Shirt)
+    4300032: Legs Male (Wetsuit)
+    4300034: Shoes Male (Flippers)
+    4300036: Torso Male (Shirtless)
+    4300038: Shoes Male (Slip-on Sneakers)
+    4300040: Shoes Male (Sneakers)
+    4300042: Legs Male (Baggy Shorts)
+    4300044: Torso Male (V-Neck)
+    4300046: Torso Male (Short Sleeve Henley)
+    4300048: Legs Male (Denim Shorts)
+    4300050: Legs Male (Button Shorts)
+    4300052: Head Male (Baseball Hat)
+    4300054: Head Male (Pushed-Back Medium)
+    4300056: Head Male (Long Front)
+    4300058: Head Male (Cornrows)
+    9500000: //RootNode
+    13700000: Head Male (Baseball Hat)
+    13700002: Head Male (Cornrows)
+    13700004: Head Male (Long Front)
+    13700006: Head Male (Pushed-Back Medium)
+    13700008: Legs Male (Baggy Shorts)
+    13700010: Legs Male (Button Shorts)
+    13700012: Legs Male (Denim Shorts)
+    13700014: Legs Male (Shorts)
+    13700016: Legs Male (Skinny Jeans)
+    13700018: Legs Male (Swimsuit)
+    13700020: Legs Male (Wetsuit)
+    13700022: Shoes Male (Flip-flops)
+    13700024: Shoes Male (Flippers)
+    13700026: Shoes Male (High Top)
+    13700028: Shoes Male (Low Top)
+    13700030: Shoes Male (None)
+    13700032: Shoes Male (Sandals)
+    13700034: Shoes Male (Slip-on Sneakers)
+    13700036: Shoes Male (Sneakers)
+    13700038: Torso Male (Button Down Rolled)
+    13700040: Torso Male (Deep V)
+    13700042: Torso Male (Hawaiian Shirt)
+    13700044: Torso Male (Medium Sleeves Baseball Tee)
+    13700046: Torso Male (Shirtless)
+    13700048: Torso Male (Short Sleeve Henley)
+    13700050: Torso Male (Short Sleeves Baseball Tee)
+    13700052: Torso Male (Short Sleeves)
+    13700054: Torso Male (Tanktop)
+    13700056: Torso Male (V-Neck)
+    13700058: Torso Male (Wetsuit)
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Additional
+    second: {fileID: 2100000, guid: 6ea6928eb4bf0df4eb25a51e547bcde2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fabric 1
+    second: {fileID: 2100000, guid: d938bc6056bc86344b8d4b085b7f5589, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hair 1
+    second: {fileID: 2100000, guid: 9e0d53c3503345f4d9ed9c60b55bf6a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Primary
+    second: {fileID: 2100000, guid: bcf40344c19787b40b56364ba225c0ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Primary Dark
+    second: {fileID: 2100000, guid: a4343bf97125c324bbd2edf336a5400f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Secondary
+    second: {fileID: 2100000, guid: 4cfd87d3a6c429f4e86e35496777b3c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 3f08dceb4a5c2dd4c9e40c4e181b25c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wetsuit
+    second: {fileID: 2100000, guid: 932a4e9a7025a3544a9a0970aad009e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White Fabric
+    second: {fileID: 2100000, guid: 02250a69ae2181c43abc46582f88c2f7, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
