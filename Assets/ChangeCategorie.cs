@@ -12,24 +12,27 @@ public class ChangeCategorie : MonoBehaviour
     public Renderer femalShortPonytailEins;
     public Renderer femalSpaceBunBig;
 
-    // Change color while clicking the right button
-    public void ChangeCategorieColorRight()
-    {
-        textCategorie.GetComponent<Text>().color = colorCategorie;
-        femalMessyHigh.material.color = colorCategorie;
-        femalShortPonytail.material.color = colorCategorie;
-        femalShortPonytailEins.material.color = colorCategorie;
-        femalSpaceBunBig.material.color = colorCategorie;
 
+    // Change color while clicking the right button
+    public void ChangeCategorieForward()
+    {
+        textCategorie.GetComponent<Text>().text = "Skin Color";
     }
 
-    // Change color while clicking the right button
-    public void ChangeCategorieColorLeft()
+    // Change color while clicking the left button
+    public void ChangeCategorieBack()
+    {
+        textCategorie.GetComponent<Text>().text = "Hair Color";
+    }
+
+    // Change color while clicking the button
+    public void ChangeCategorieColor()
     {
         textCategorie.GetComponent<Text>().color = colorCategorie;
         femalMessyHigh.material.color = colorCategorie;
         femalShortPonytail.material.color = colorCategorie;
         femalShortPonytailEins.material.color = colorCategorie;
         femalSpaceBunBig.material.color = colorCategorie;
+
     }
 }
