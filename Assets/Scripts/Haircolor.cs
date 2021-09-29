@@ -16,6 +16,7 @@ public class Haircolor : MonoBehaviour
         new Color(0.8207547f, 0.1587308f, 0.5216417f, 1f)
      };
 
+    public TMPro.TMP_Text textCategorie;
     public Color colorCategorie;
     public Renderer femaleA7;
     public Renderer femaleBabyBangs;
@@ -33,6 +34,17 @@ public class Haircolor : MonoBehaviour
     public Renderer femaleStraightShortLow;
 
     private static List<int> colors = new List<int> { 0, 1, 2, 3, 4 };
+
+
+    public void ChangeCategoryTextForward()
+    {
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Hairstyle";
+    }
+
+    public void ChangeCategoryTextBack()
+    {
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Skincolor";
+    }
 
     // Change categorie forward while clicking the right button
     public void ChangeSettingHaircolorForward()

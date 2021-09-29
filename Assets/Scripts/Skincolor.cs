@@ -17,6 +17,7 @@ public class Skincolor : MonoBehaviour
     public TMPro.TMP_Text textCategorie;
     public Renderer femaleBaseBody;
     private int numberSkincolor = 0;
+    private static List<int> colors = new List<int> { 0, 1, 2, 3};
 
     public void ChangeCategoryTextForward()
     {
@@ -30,80 +31,34 @@ public class Skincolor : MonoBehaviour
 
     public void ChangeSettingSkincolorForward()
     {
-        if (numberSkincolor == 0)
-        {
-            femaleBaseBody.materials[0].color = skincolor[1];
-            femaleBaseBody.materials[1].color = skincolor[1];
-            femaleBaseBody.materials[2].color = skincolor[1];
-            femaleBaseBody.materials[3].color = skincolor[1];
-            numberSkincolor += 1;
-        }
 
-        else if (numberSkincolor == 1)
-        {
-            femaleBaseBody.materials[0].color = skincolor[2];
-            femaleBaseBody.materials[1].color = skincolor[2];
-            femaleBaseBody.materials[2].color = skincolor[2];
-            femaleBaseBody.materials[3].color = skincolor[2];
-            numberSkincolor += 1;
-        }
+        int item = colors[0];
+        colors.RemoveAt(0);
+        colors.Insert(colors.Count, item);
 
-        else if (numberSkincolor == 2)
-        {
-            femaleBaseBody.materials[0].color = skincolor[3];
-            femaleBaseBody.materials[1].color = skincolor[3];
-            femaleBaseBody.materials[2].color = skincolor[3];
-            femaleBaseBody.materials[3].color = skincolor[3];
-            numberSkincolor += 1;
-        }
+        int currentColor = colors[0];
 
-        else if (numberSkincolor == 3)
-        {
-            femaleBaseBody.materials[0].color = skincolor[0];
-            femaleBaseBody.materials[1].color = skincolor[0];
-            femaleBaseBody.materials[2].color = skincolor[0];
-            femaleBaseBody.materials[3].color = skincolor[0];
-            numberSkincolor = 0;
-        }
+        // Debug.Log("Forward: " + colors[0]);
+
+        femaleBaseBody.materials[0].color = skincolor[currentColor];
+        femaleBaseBody.materials[1].color = skincolor[currentColor];
+        femaleBaseBody.materials[2].color = skincolor[currentColor];
+        femaleBaseBody.materials[3].color = skincolor[currentColor];
     }
 
     public void ChangeSettingSkincolorBack()
     {
-        if (numberSkincolor == 0)
-        {
-            femaleBaseBody.materials[0].color = skincolor[3];
-            femaleBaseBody.materials[1].color = skincolor[3];
-            femaleBaseBody.materials[2].color = skincolor[3];
-            femaleBaseBody.materials[3].color = skincolor[3];
-            numberSkincolor += 1;
-        }
+        int item = colors[colors.Count - 1];
+        colors.RemoveAt(colors.Count - 1);
+        colors.Insert(0, item);
 
-        else if (numberSkincolor == 1)
-        {
-            femaleBaseBody.materials[0].color = skincolor[2];
-            femaleBaseBody.materials[1].color = skincolor[2];
-            femaleBaseBody.materials[2].color = skincolor[2];
-            femaleBaseBody.materials[3].color = skincolor[2];
-            numberSkincolor += 1;
-        }
+        int currentColor = colors[0];
 
-        else if (numberSkincolor == 2)
-        {
-            femaleBaseBody.materials[0].color = skincolor[1];
-            femaleBaseBody.materials[1].color = skincolor[1];
-            femaleBaseBody.materials[2].color = skincolor[1];
-            femaleBaseBody.materials[3].color = skincolor[1];
-            numberSkincolor += 1;
-        }
-
-        else if (numberSkincolor == 3)
-        {
-            femaleBaseBody.materials[0].color = skincolor[0];
-            femaleBaseBody.materials[1].color = skincolor[0];
-            femaleBaseBody.materials[2].color = skincolor[0];
-            femaleBaseBody.materials[3].color = skincolor[0];
-            numberSkincolor = 0;
-        }
+        // Debug.Log("BACK: " + colors[0]);
+        femaleBaseBody.materials[0].color = skincolor[currentColor];
+        femaleBaseBody.materials[1].color = skincolor[currentColor];
+        femaleBaseBody.materials[2].color = skincolor[currentColor];
+        femaleBaseBody.materials[3].color = skincolor[currentColor];
     }
 
 }
