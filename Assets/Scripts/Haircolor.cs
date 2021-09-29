@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class Haircolor : MonoBehaviour
 {
-
     Color[] haircolor =
     {
         new Color(1, 1f, 1f, 1f),
@@ -16,7 +16,6 @@ public class Haircolor : MonoBehaviour
         new Color(0.8207547f, 0.1587308f, 0.5216417f, 1f)
      };
 
-    public TMPro.TMP_Text textCategorie;
     public Color colorCategorie;
     public Renderer femaleA7;
     public Renderer femaleBabyBangs;
@@ -33,225 +32,55 @@ public class Haircolor : MonoBehaviour
     public Renderer femaleSpaceBun;
     public Renderer femaleStraightShortLow;
 
-    private int numberHaircolor = 0;
-
-
-    public void ChangeCategoryTextForward()
-    {
-        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Hairstyle";
-    }
-
-    public void ChangeCategoryTextBack()
-    {
-        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Skincolor";
-    }
+    private static List<int> colors = new List<int> { 0, 1, 2, 3, 4 };
 
     // Change categorie forward while clicking the right button
     public void ChangeSettingHaircolorForward()
     {
+        int item = colors[0];
+        colors.RemoveAt(0);
+        colors.Insert(colors.Count, item);
 
-        if (numberHaircolor == 0)
-        {
-            femaleA7.material.color = haircolor[1];
-            femaleBabyBangs.material.color = haircolor[1];
-            femaleLongHigh.material.color = haircolor[1];
-            femalePonytailBack.material.color = haircolor[1];
-            femalePonytailL.material.color = haircolor[1];
-            femalePonytailR.material.color = haircolor[1];
-            femaleDoubleLow.material.color = haircolor[1];
-            femaleMessyHigh.material.color = haircolor[1];
-            femaleMessyPonytailBack.material.color = haircolor[1];
-            femaleSamuraiBun.material.color = haircolor[1];
-            femaleSideBangs.material.color = haircolor[1];
-            femaleSideBangsO.material.color = haircolor[1];
-            femaleSpaceBun.material.color = haircolor[1];
-            femaleStraightShortLow.material.color = haircolor[1];
+        int currentColor = colors[0];
 
-            numberHaircolor = 1;
+        // Debug.Log("Forward: " + colors[0]);
 
-        }
-        else if (numberHaircolor == 1)
-        {
-            femaleA7.material.color = haircolor[2];
-            femaleBabyBangs.material.color = haircolor[2];
-            femaleLongHigh.material.color = haircolor[2];
-            femalePonytailBack.material.color = haircolor[2];
-            femalePonytailL.material.color = haircolor[2];
-            femalePonytailR.material.color = haircolor[2];
-            femaleDoubleLow.material.color = haircolor[2];
-            femaleMessyHigh.material.color = haircolor[2];
-            femaleMessyPonytailBack.material.color = haircolor[2];
-            femaleSamuraiBun.material.color = haircolor[2];
-            femaleSideBangs.material.color = haircolor[2];
-            femaleSideBangsO.material.color = haircolor[2];
-            femaleSpaceBun.material.color = haircolor[2];
-            femaleStraightShortLow.material.color = haircolor[2];
-
-            numberHaircolor = 2;
-        }
-        else if (numberHaircolor == 2)
-        {
-            femaleA7.material.color = haircolor[3];
-            femaleBabyBangs.material.color = haircolor[3];
-            femaleLongHigh.material.color = haircolor[3];
-            femalePonytailBack.material.color = haircolor[3];
-            femalePonytailL.material.color = haircolor[3];
-            femalePonytailR.material.color = haircolor[3];
-            femaleDoubleLow.material.color = haircolor[3];
-            femaleMessyHigh.material.color = haircolor[3];
-            femaleMessyPonytailBack.material.color = haircolor[3];
-            femaleSamuraiBun.material.color = haircolor[3];
-            femaleSideBangs.material.color = haircolor[3];
-            femaleSideBangsO.material.color = haircolor[3];
-            femaleSpaceBun.material.color = haircolor[3];
-            femaleStraightShortLow.material.color = haircolor[3];
-
-            numberHaircolor = 3;
-        }
-
-        else if (numberHaircolor == 3)
-        {
-            femaleA7.material.color = haircolor[4];
-            femaleBabyBangs.material.color = haircolor[4];
-            femaleLongHigh.material.color = haircolor[4];
-            femalePonytailBack.material.color = haircolor[4];
-            femalePonytailL.material.color = haircolor[4];
-            femalePonytailR.material.color = haircolor[4];
-            femaleDoubleLow.material.color = haircolor[4];
-            femaleMessyHigh.material.color = haircolor[4];
-            femaleMessyPonytailBack.material.color = haircolor[4];
-            femaleSamuraiBun.material.color = haircolor[4];
-            femaleSideBangs.material.color = haircolor[4];
-            femaleSideBangsO.material.color = haircolor[4];
-            femaleSpaceBun.material.color = haircolor[4];
-            femaleStraightShortLow.material.color = haircolor[4];
-
-            numberHaircolor = 4;
-        }
-
-        else if (numberHaircolor == 4)
-        {
-            femaleA7.material.color = haircolor[0];
-            femaleBabyBangs.material.color = haircolor[0];
-            femaleLongHigh.material.color = haircolor[0];
-            femalePonytailBack.material.color = haircolor[0];
-            femalePonytailL.material.color = haircolor[0];
-            femalePonytailR.material.color = haircolor[0];
-            femaleDoubleLow.material.color = haircolor[0];
-            femaleMessyHigh.material.color = haircolor[0];
-            femaleMessyPonytailBack.material.color = haircolor[0];
-            femaleSamuraiBun.material.color = haircolor[0];
-            femaleSideBangs.material.color = haircolor[0];
-            femaleSideBangsO.material.color = haircolor[0];
-            femaleSpaceBun.material.color = haircolor[0];
-            femaleStraightShortLow.material.color = haircolor[0];
-
-            numberHaircolor = 0;
-        }
+        femaleA7.material.color = haircolor[currentColor];
+        femaleBabyBangs.material.color = haircolor[currentColor];
+        femaleLongHigh.material.color = haircolor[currentColor];
+        femalePonytailBack.material.color = haircolor[currentColor];
+        femalePonytailL.material.color = haircolor[currentColor];
+        femalePonytailR.material.color = haircolor[currentColor];
+        femaleDoubleLow.material.color = haircolor[currentColor];
+        femaleMessyHigh.material.color = haircolor[currentColor];
+        femaleMessyPonytailBack.material.color = haircolor[currentColor];
+        femaleSamuraiBun.material.color = haircolor[currentColor];
+        femaleSideBangs.material.color = haircolor[currentColor];
+        femaleSideBangsO.material.color = haircolor[currentColor];
+        femaleSpaceBun.material.color = haircolor[currentColor];
+        femaleStraightShortLow.material.color = haircolor[currentColor];
     }
 
     public void ChangeSettingHaircolorBack()
     {
-        if (numberHaircolor == 0)
-        {
-            femaleA7.material.color = haircolor[4];
-            femaleBabyBangs.material.color = haircolor[4];
-            femaleLongHigh.material.color = haircolor[4];
-            femalePonytailBack.material.color = haircolor[4];
-            femalePonytailL.material.color = haircolor[4];
-            femalePonytailR.material.color = haircolor[4];
-            femaleDoubleLow.material.color = haircolor[4];
-            femaleMessyHigh.material.color = haircolor[4];
-            femaleMessyPonytailBack.material.color = haircolor[4];
-            femaleSamuraiBun.material.color = haircolor[4];
-            femaleSideBangs.material.color = haircolor[4];
-            femaleSideBangsO.material.color = haircolor[4];
-            femaleSpaceBun.material.color = haircolor[4];
-            femaleStraightShortLow.material.color = haircolor[4];
+        int item = colors[colors.Count - 1];
+        colors.RemoveAt(colors.Count - 1);
+        colors.Insert(0, item);
 
-            numberHaircolor = 4;
-        }
+        int currentColor = colors[0];
 
-        else if (numberHaircolor == 1)
-        {
-            femaleA7.material.color = haircolor[0];
-            femaleBabyBangs.material.color = haircolor[0];
-            femaleLongHigh.material.color = haircolor[0];
-            femalePonytailBack.material.color = haircolor[0];
-            femalePonytailL.material.color = haircolor[0];
-            femalePonytailR.material.color = haircolor[0];
-            femaleDoubleLow.material.color = haircolor[0];
-            femaleMessyHigh.material.color = haircolor[0];
-            femaleMessyPonytailBack.material.color = haircolor[0];
-            femaleSamuraiBun.material.color = haircolor[0];
-            femaleSideBangs.material.color = haircolor[0];
-            femaleSideBangsO.material.color = haircolor[0];
-            femaleSpaceBun.material.color = haircolor[0];
-            femaleStraightShortLow.material.color = haircolor[0];
+        // Debug.Log("BACK: " + colors[0]);
 
-            numberHaircolor = 0;
-        }
-
-        else if (numberHaircolor == 2)
-        {
-            femaleA7.material.color = haircolor[1];
-            femaleBabyBangs.material.color = haircolor[1];
-            femaleLongHigh.material.color = haircolor[1];
-            femalePonytailBack.material.color = haircolor[1];
-            femalePonytailL.material.color = haircolor[1];
-            femalePonytailR.material.color = haircolor[1];
-            femaleDoubleLow.material.color = haircolor[1];
-            femaleMessyHigh.material.color = haircolor[1];
-            femaleMessyPonytailBack.material.color = haircolor[1];
-            femaleSamuraiBun.material.color = haircolor[1];
-            femaleSideBangs.material.color = haircolor[1];
-            femaleSideBangsO.material.color = haircolor[1];
-            femaleSpaceBun.material.color = haircolor[1];
-            femaleStraightShortLow.material.color = haircolor[1];
-
-            numberHaircolor = 1;
-
-
-        }
-        else if (numberHaircolor == 3)
-        {
-            femaleA7.material.color = haircolor[2];
-            femaleBabyBangs.material.color = haircolor[2];
-            femaleLongHigh.material.color = haircolor[2];
-            femalePonytailBack.material.color = haircolor[2];
-            femalePonytailL.material.color = haircolor[2];
-            femalePonytailR.material.color = haircolor[2];
-            femaleDoubleLow.material.color = haircolor[2];
-            femaleMessyHigh.material.color = haircolor[2];
-            femaleMessyPonytailBack.material.color = haircolor[2];
-            femaleSamuraiBun.material.color = haircolor[2];
-            femaleSideBangs.material.color = haircolor[2];
-            femaleSideBangsO.material.color = haircolor[2];
-            femaleSpaceBun.material.color = haircolor[2];
-            femaleStraightShortLow.material.color = haircolor[2];
-
-            numberHaircolor = 2;
-        }
-
-        else if (numberHaircolor == 4)
-        {
-            femaleA7.material.color = haircolor[3];
-            femaleBabyBangs.material.color = haircolor[3];
-            femaleLongHigh.material.color = haircolor[3];
-            femalePonytailBack.material.color = haircolor[3];
-            femalePonytailL.material.color = haircolor[3];
-            femalePonytailR.material.color = haircolor[3];
-            femaleDoubleLow.material.color = haircolor[3];
-            femaleMessyHigh.material.color = haircolor[3];
-            femaleMessyPonytailBack.material.color = haircolor[3];
-            femaleSamuraiBun.material.color = haircolor[3];
-            femaleSideBangs.material.color = haircolor[3];
-            femaleSideBangsO.material.color = haircolor[3];
-            femaleSpaceBun.material.color = haircolor[3];
-            femaleStraightShortLow.material.color = haircolor[3];
-
-            numberHaircolor = 3;
-        }
+        femaleA7.material.color = haircolor[currentColor];
+        femaleBabyBangs.material.color = haircolor[currentColor];
+        femaleLongHigh.material.color = haircolor[currentColor];
+        femalePonytailBack.material.color = haircolor[currentColor];
+        femalePonytailL.material.color = haircolor[currentColor];
+        femalePonytailR.material.color = haircolor[currentColor];
+        femaleDoubleLow.material.color = haircolor[currentColor];
+        femaleMessyHigh.material.color = haircolor[currentColor];
+        femaleMessyPonytailBack.material.color = haircolor[currentColor];
+        femaleSamuraiBun.material.color = haircolor[currentColor];
+        femaleSideBangs.material.color = haircolor[currentColor];
     }
-
 }
