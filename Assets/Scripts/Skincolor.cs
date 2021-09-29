@@ -8,10 +8,10 @@ public class Skincolor : MonoBehaviour
 {
     Color[] skincolor =
     {
-        new Color(0.2924528f, 0.05086612f, 0.03448736f, 1f),
-        new Color(0.1509434f, 0.04593461f, 0.03915985f, 1f),
-        new Color(0.8207547f, 0.723691f, 0.7162246f, 1),
-        new Color(0.08490568f, 0.0557001f, 0.0532663f, 1f)
+        new Color(1f, 1f, 1f, 1f),
+        new Color(0.5764706f, 0.3647059f, 0.2156863f, 1f),
+        new Color(0.4823529f, 0.2941177f, 0.1647059f, 1),
+        new Color(0.282353f, 0.2156863f, 0.1568628f, 1f)
      };
 
     public Renderer femaleBaseBody;
@@ -19,17 +19,80 @@ public class Skincolor : MonoBehaviour
 
     public void ChangeSettingSkincolorForward()
     {
-        femaleBaseBody.materials[0].color = skincolor[numberSkincolor];
-        femaleBaseBody.materials[1].color = skincolor[numberSkincolor];
-        femaleBaseBody.materials[2].color = skincolor[numberSkincolor];
-        femaleBaseBody.materials[3].color = skincolor[numberSkincolor];
-        if (numberSkincolor == skincolor.Length)
+        if (numberSkincolor == 0)
         {
-            numberSkincolor -= 1;
-        }
-        else
-        {
+            femaleBaseBody.materials[0].color = skincolor[1];
+            femaleBaseBody.materials[1].color = skincolor[1];
+            femaleBaseBody.materials[2].color = skincolor[1];
+            femaleBaseBody.materials[3].color = skincolor[1];
             numberSkincolor += 1;
         }
+
+        else if (numberSkincolor == 1)
+        {
+            femaleBaseBody.materials[0].color = skincolor[2];
+            femaleBaseBody.materials[1].color = skincolor[2];
+            femaleBaseBody.materials[2].color = skincolor[2];
+            femaleBaseBody.materials[3].color = skincolor[2];
+            numberSkincolor += 1;
+        }
+
+        else if (numberSkincolor == 2)
+        {
+            femaleBaseBody.materials[0].color = skincolor[3];
+            femaleBaseBody.materials[1].color = skincolor[3];
+            femaleBaseBody.materials[2].color = skincolor[3];
+            femaleBaseBody.materials[3].color = skincolor[3];
+            numberSkincolor += 1;
+        }
+
+        else if (numberSkincolor == 3)
+        {
+            femaleBaseBody.materials[0].color = skincolor[0];
+            femaleBaseBody.materials[1].color = skincolor[0];
+            femaleBaseBody.materials[2].color = skincolor[0];
+            femaleBaseBody.materials[3].color = skincolor[0];
+            numberSkincolor = 0;
+        }
     }
+
+    public void ChangeSettingSkincolorBack()
+    {
+        if (numberSkincolor == 0)
+        {
+            femaleBaseBody.materials[0].color = skincolor[3];
+            femaleBaseBody.materials[1].color = skincolor[3];
+            femaleBaseBody.materials[2].color = skincolor[3];
+            femaleBaseBody.materials[3].color = skincolor[3];
+            numberSkincolor += 1;
+        }
+
+        else if (numberSkincolor == 1)
+        {
+            femaleBaseBody.materials[0].color = skincolor[2];
+            femaleBaseBody.materials[1].color = skincolor[2];
+            femaleBaseBody.materials[2].color = skincolor[2];
+            femaleBaseBody.materials[3].color = skincolor[2];
+            numberSkincolor += 1;
+        }
+
+        else if (numberSkincolor == 2)
+        {
+            femaleBaseBody.materials[0].color = skincolor[1];
+            femaleBaseBody.materials[1].color = skincolor[1];
+            femaleBaseBody.materials[2].color = skincolor[1];
+            femaleBaseBody.materials[3].color = skincolor[1];
+            numberSkincolor += 1;
+        }
+
+        else if (numberSkincolor == 3)
+        {
+            femaleBaseBody.materials[0].color = skincolor[0];
+            femaleBaseBody.materials[1].color = skincolor[0];
+            femaleBaseBody.materials[2].color = skincolor[0];
+            femaleBaseBody.materials[3].color = skincolor[0];
+            numberSkincolor = 0;
+        }
+    }
+
 }

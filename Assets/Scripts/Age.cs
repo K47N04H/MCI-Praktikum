@@ -50,4 +50,40 @@ public class Age : MonoBehaviour
         }
 
     }
+
+    public void ChangeAgeBack()
+    {
+        if (femaleSlimOld.activeInHierarchy == true)
+        {
+
+            femaleFitOld.SetActive(false);
+            femaleSlimYoung.SetActive(true);
+            femaleChubbyOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+
+
+
+        }
+
+        else if (femaleChubbyOld.activeInHierarchy == true)
+        {
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyYoung.SetActive(true);
+            femaleChubbyOld.SetActive(false);
+
+
+        }
+
+        else if (femaleFitOld.activeInHierarchy == true)
+        {
+
+            femaleFitYoung.SetActive(true);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(false);
+            femaleFitOld.SetActive(false);
+
+        }
+
+    }
 }

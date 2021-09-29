@@ -17890,24 +17890,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 474249982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b47626b2f336b545bf38ed3f7472a11, type: 3}
+  m_Script: {fileID: 11500000, guid: 69f3cf4f9f053444e9ac7d055e836fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCategorie: {r: 0.8207547, g: 0.15873085, b: 0.5216417, a: 1}
-  femaleA7: {fileID: 385624322}
-  femaleBabyBangs: {fileID: 984358299}
-  femaleLongHigh: {fileID: 1189051685}
-  femalePonytailBack: {fileID: 1306335646}
-  femalePonytailL: {fileID: 525544710}
-  femalePonytailR: {fileID: 1816123785}
-  femaleDoubleLow: {fileID: 371811282}
-  femaleMessyHigh: {fileID: 1980483480}
-  femaleMessyPonytailBack: {fileID: 191204610}
-  femaleSamuraiBun: {fileID: 2019478475}
-  femaleSideBangs: {fileID: 1812276887}
-  femaleSideBangsO: {fileID: 1306272602}
-  femaleSpaceBun: {fileID: 1016452326}
-  femaleStraightShortLow: {fileID: 2082080501}
+  femaleBaseBody: {fileID: 1745463008}
 --- !u!114 &474249985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17953,8 +17939,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 474249984}
-        m_TargetAssemblyTypeName: Haircolor, Assembly-CSharp
-        m_MethodName: ChangeSettingHaircolorBack
+        m_TargetAssemblyTypeName: Skincolor, Assembly-CSharp
+        m_MethodName: ChangeSettingSkincolorBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21204,7 +21190,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1439767229}
+      - m_Target: {fileID: 1299899753}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
