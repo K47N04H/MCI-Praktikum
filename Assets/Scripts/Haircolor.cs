@@ -7,10 +7,10 @@ using TMPro;
 public class Haircolor : MonoBehaviour
 {
 
-    Color[] haircolor = 
-    { 
-        new Color(0.1792453f, 0.06442863f, 0.05157529f, 1f), 
-        new Color(0.5943396f, 0.1319459f, 0.1037291f, 1f), 
+    Color[] haircolor =
+    {
+        new Color(1, 1f, 1f, 1f),
+        new Color(0.5943396f, 0.1319459f, 0.1037291f, 1f),
         new Color(0.07266822f, 0.6698113f, 0.1575639f, 1),
         new Color(0.0745098f, 0.1679017f, 0.6705883f, 1f),
         new Color(0.8207547f, 0.1587308f, 0.5216417f, 1f)
@@ -38,55 +38,209 @@ public class Haircolor : MonoBehaviour
     // Change categorie forward while clicking the right button
     public void ChangeSettingHaircolorForward()
     {
-            femaleA7.material.color = haircolor[numberHaircolor];
-            femaleBabyBangs.material.color = haircolor[numberHaircolor];
-            femaleLongHigh.material.color = haircolor[numberHaircolor];
-            femalePonytailBack.material.color = haircolor[numberHaircolor];
-            femalePonytailL.material.color = haircolor[numberHaircolor];
-            femalePonytailR.material.color = haircolor[numberHaircolor];
-            femaleDoubleLow.material.color = haircolor[numberHaircolor];
-            femaleMessyHigh.material.color = haircolor[numberHaircolor];
-            femaleMessyPonytailBack.material.color = haircolor[numberHaircolor];
-            femaleSamuraiBun.material.color = haircolor[numberHaircolor];
-            femaleSideBangs.material.color = haircolor[numberHaircolor];
-            femaleSideBangsO.material.color = haircolor[numberHaircolor];
-            femaleSpaceBun.material.color = haircolor[numberHaircolor];
-            femaleStraightShortLow.material.color = haircolor[numberHaircolor];
-        if(numberHaircolor == haircolor.Length)
+        if (numberHaircolor == 0)
         {
-            numberHaircolor -= 1;
+            femaleA7.material.color = haircolor[1];
+            femaleBabyBangs.material.color = haircolor[1];
+            femaleLongHigh.material.color = haircolor[1];
+            femalePonytailBack.material.color = haircolor[1];
+            femalePonytailL.material.color = haircolor[1];
+            femalePonytailR.material.color = haircolor[1];
+            femaleDoubleLow.material.color = haircolor[1];
+            femaleMessyHigh.material.color = haircolor[1];
+            femaleMessyPonytailBack.material.color = haircolor[1];
+            femaleSamuraiBun.material.color = haircolor[1];
+            femaleSideBangs.material.color = haircolor[1];
+            femaleSideBangsO.material.color = haircolor[1];
+            femaleSpaceBun.material.color = haircolor[1];
+            femaleStraightShortLow.material.color = haircolor[1];
+
+            numberHaircolor += 1;
+
         }
-        else
+        else if (numberHaircolor == 1)
         {
+            femaleA7.material.color = haircolor[2];
+            femaleBabyBangs.material.color = haircolor[2];
+            femaleLongHigh.material.color = haircolor[2];
+            femalePonytailBack.material.color = haircolor[2];
+            femalePonytailL.material.color = haircolor[2];
+            femalePonytailR.material.color = haircolor[2];
+            femaleDoubleLow.material.color = haircolor[2];
+            femaleMessyHigh.material.color = haircolor[2];
+            femaleMessyPonytailBack.material.color = haircolor[2];
+            femaleSamuraiBun.material.color = haircolor[2];
+            femaleSideBangs.material.color = haircolor[2];
+            femaleSideBangsO.material.color = haircolor[2];
+            femaleSpaceBun.material.color = haircolor[2];
+            femaleStraightShortLow.material.color = haircolor[2];
+
+            numberHaircolor += 1;
+        }
+        else if (numberHaircolor == 2)
+        {
+            femaleA7.material.color = haircolor[3];
+            femaleBabyBangs.material.color = haircolor[3];
+            femaleLongHigh.material.color = haircolor[3];
+            femalePonytailBack.material.color = haircolor[3];
+            femalePonytailL.material.color = haircolor[3];
+            femalePonytailR.material.color = haircolor[3];
+            femaleDoubleLow.material.color = haircolor[3];
+            femaleMessyHigh.material.color = haircolor[3];
+            femaleMessyPonytailBack.material.color = haircolor[3];
+            femaleSamuraiBun.material.color = haircolor[3];
+            femaleSideBangs.material.color = haircolor[3];
+            femaleSideBangsO.material.color = haircolor[3];
+            femaleSpaceBun.material.color = haircolor[3];
+            femaleStraightShortLow.material.color = haircolor[3];
+
             numberHaircolor += 1;
         }
 
+        else if (numberHaircolor == 3)
+        {
+            femaleA7.material.color = haircolor[4];
+            femaleBabyBangs.material.color = haircolor[4];
+            femaleLongHigh.material.color = haircolor[4];
+            femalePonytailBack.material.color = haircolor[4];
+            femalePonytailL.material.color = haircolor[4];
+            femalePonytailR.material.color = haircolor[4];
+            femaleDoubleLow.material.color = haircolor[4];
+            femaleMessyHigh.material.color = haircolor[4];
+            femaleMessyPonytailBack.material.color = haircolor[4];
+            femaleSamuraiBun.material.color = haircolor[4];
+            femaleSideBangs.material.color = haircolor[4];
+            femaleSideBangsO.material.color = haircolor[4];
+            femaleSpaceBun.material.color = haircolor[4];
+            femaleStraightShortLow.material.color = haircolor[4];
+
+            numberHaircolor += 1;
+        }
+
+        else if (numberHaircolor == 4)
+        {
+            femaleA7.material.color = haircolor[0];
+            femaleBabyBangs.material.color = haircolor[0];
+            femaleLongHigh.material.color = haircolor[0];
+            femalePonytailBack.material.color = haircolor[0];
+            femalePonytailL.material.color = haircolor[0];
+            femalePonytailR.material.color = haircolor[0];
+            femaleDoubleLow.material.color = haircolor[0];
+            femaleMessyHigh.material.color = haircolor[0];
+            femaleMessyPonytailBack.material.color = haircolor[0];
+            femaleSamuraiBun.material.color = haircolor[0];
+            femaleSideBangs.material.color = haircolor[0];
+            femaleSideBangsO.material.color = haircolor[0];
+            femaleSpaceBun.material.color = haircolor[0];
+            femaleStraightShortLow.material.color = haircolor[0];
+
+            numberHaircolor = 0;
+        }
     }
 
     public void ChangeSettingHaircolorBack()
     {
-        femaleA7.material.color = haircolor[numberHaircolor];
-        femaleBabyBangs.material.color = haircolor[numberHaircolor];
-        femaleLongHigh.material.color = haircolor[numberHaircolor];
-        femalePonytailBack.material.color = haircolor[numberHaircolor];
-        femalePonytailL.material.color = haircolor[numberHaircolor];
-        femalePonytailR.material.color = haircolor[numberHaircolor];
-        femaleDoubleLow.material.color = haircolor[numberHaircolor];
-        femaleMessyHigh.material.color = haircolor[numberHaircolor];
-        femaleMessyPonytailBack.material.color = haircolor[numberHaircolor];
-        femaleSamuraiBun.material.color = haircolor[numberHaircolor];
-        femaleSideBangs.material.color = haircolor[numberHaircolor];
-        femaleSideBangsO.material.color = haircolor[numberHaircolor];
-        femaleSpaceBun.material.color = haircolor[numberHaircolor];
-        femaleStraightShortLow.material.color = haircolor[numberHaircolor];
         if (numberHaircolor == 0)
         {
+            femaleA7.material.color = haircolor[0];
+            femaleBabyBangs.material.color = haircolor[0];
+            femaleLongHigh.material.color = haircolor[0];
+            femalePonytailBack.material.color = haircolor[0];
+            femalePonytailL.material.color = haircolor[0];
+            femalePonytailR.material.color = haircolor[0];
+            femaleDoubleLow.material.color = haircolor[0];
+            femaleMessyHigh.material.color = haircolor[0];
+            femaleMessyPonytailBack.material.color = haircolor[0];
+            femaleSamuraiBun.material.color = haircolor[0];
+            femaleSideBangs.material.color = haircolor[0];
+            femaleSideBangsO.material.color = haircolor[0];
+            femaleSpaceBun.material.color = haircolor[0];
+            femaleStraightShortLow.material.color = haircolor[0];
+
             numberHaircolor += 1;
         }
-        else
+
+        else if (numberHaircolor == 1)
         {
-            numberHaircolor -= 1;
+            femaleA7.material.color = haircolor[4];
+            femaleBabyBangs.material.color = haircolor[4];
+            femaleLongHigh.material.color = haircolor[4];
+            femalePonytailBack.material.color = haircolor[4];
+            femalePonytailL.material.color = haircolor[4];
+            femalePonytailR.material.color = haircolor[4];
+            femaleDoubleLow.material.color = haircolor[4];
+            femaleMessyHigh.material.color = haircolor[4];
+            femaleMessyPonytailBack.material.color = haircolor[4];
+            femaleSamuraiBun.material.color = haircolor[4];
+            femaleSideBangs.material.color = haircolor[4];
+            femaleSideBangsO.material.color = haircolor[4];
+            femaleSpaceBun.material.color = haircolor[4];
+            femaleStraightShortLow.material.color = haircolor[4];
+
+            numberHaircolor += 1;
+        }
+
+        else if (numberHaircolor == 2)
+        {
+            femaleA7.material.color = haircolor[3];
+            femaleBabyBangs.material.color = haircolor[3];
+            femaleLongHigh.material.color = haircolor[3];
+            femalePonytailBack.material.color = haircolor[3];
+            femalePonytailL.material.color = haircolor[3];
+            femalePonytailR.material.color = haircolor[3];
+            femaleDoubleLow.material.color = haircolor[3];
+            femaleMessyHigh.material.color = haircolor[3];
+            femaleMessyPonytailBack.material.color = haircolor[3];
+            femaleSamuraiBun.material.color = haircolor[3];
+            femaleSideBangs.material.color = haircolor[3];
+            femaleSideBangsO.material.color = haircolor[3];
+            femaleSpaceBun.material.color = haircolor[3];
+            femaleStraightShortLow.material.color = haircolor[3];
+
+            numberHaircolor += 1;
+
+
+        }
+        else if (numberHaircolor == 3)
+        {
+            femaleA7.material.color = haircolor[2];
+            femaleBabyBangs.material.color = haircolor[2];
+            femaleLongHigh.material.color = haircolor[2];
+            femalePonytailBack.material.color = haircolor[2];
+            femalePonytailL.material.color = haircolor[2];
+            femalePonytailR.material.color = haircolor[2];
+            femaleDoubleLow.material.color = haircolor[2];
+            femaleMessyHigh.material.color = haircolor[2];
+            femaleMessyPonytailBack.material.color = haircolor[2];
+            femaleSamuraiBun.material.color = haircolor[2];
+            femaleSideBangs.material.color = haircolor[2];
+            femaleSideBangsO.material.color = haircolor[2];
+            femaleSpaceBun.material.color = haircolor[2];
+            femaleStraightShortLow.material.color = haircolor[2];
+
+            numberHaircolor += 1;
+        }
+
+
+
+        else if (numberHaircolor == 4)
+        {
+            femaleA7.material.color = haircolor[1];
+            femaleBabyBangs.material.color = haircolor[1];
+            femaleLongHigh.material.color = haircolor[1];
+            femalePonytailBack.material.color = haircolor[1];
+            femalePonytailL.material.color = haircolor[1];
+            femalePonytailR.material.color = haircolor[1];
+            femaleDoubleLow.material.color = haircolor[1];
+            femaleMessyHigh.material.color = haircolor[1];
+            femaleMessyPonytailBack.material.color = haircolor[1];
+            femaleSamuraiBun.material.color = haircolor[1];
+            femaleSideBangs.material.color = haircolor[1];
+            femaleSideBangsO.material.color = haircolor[1];
+            femaleSpaceBun.material.color = haircolor[1];
+            femaleStraightShortLow.material.color = haircolor[1];
+
+            numberHaircolor = 0;
         }
     }
-
 }
