@@ -6,6 +6,7 @@ using TMPro;
 
 public class Age : MonoBehaviour
 {
+    public TMPro.TMP_Text textCategorie;
     public GameObject femaleFitYoung;
     public GameObject femaleSlimYoung;
     public GameObject femaleChubbyYoung;
@@ -13,7 +14,15 @@ public class Age : MonoBehaviour
     public GameObject femaleSlimOld;
     public GameObject femaleChubbyOld;
 
-    
+    public void ChangeCategoryTextForward()
+    {
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Skincolor";
+    }
+
+    public void ChangeCategoryTextBack()
+    {
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Bodytype";
+    }
 
     public void ChangeAgeForward()
     {

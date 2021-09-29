@@ -6,11 +6,23 @@ using TMPro;
 
 public class Bodytype : MonoBehaviour
 {
+    public TMPro.TMP_Text textCategorie;
     public GameObject femaleFit;
     public GameObject femaleSlim;
     public GameObject femaleChubby;
 
     private int numberBodytype = 0;
+
+    public void ChangeCategoryTextForward()
+    {
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Age";
+    }
+
+    public void ChangeCategoryTextBack()
+    {
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Gender";
+    }
+
 
     public void ChangeBodytypeForward()
     {

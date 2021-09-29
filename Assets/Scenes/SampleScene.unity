@@ -7469,6 +7469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2ae6ab464657f45b309d440d272b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   femaleFitYoung: {fileID: 782756854}
   femaleSlimYoung: {fileID: 1202383191}
   femaleChubbyYoung: {fileID: 1944751753}
@@ -12008,6 +12009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f3cf4f9f053444e9ac7d055e836fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   femaleBaseBody: {fileID: 1745463008}
 --- !u!114 &310649403
 MonoBehaviour:
@@ -18027,6 +18029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f3cf4f9f053444e9ac7d055e836fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   femaleBaseBody: {fileID: 1745463008}
 --- !u!114 &474249985
 MonoBehaviour:
@@ -21227,7 +21230,7 @@ GameObject:
   - component: {fileID: 571350441}
   - component: {fileID: 571350440}
   - component: {fileID: 571350439}
-  - component: {fileID: 571350438}
+  - component: {fileID: 571350442}
   m_Layer: 5
   m_Name: age_categories_button_right
   m_TagString: Untagged
@@ -21255,19 +21258,6 @@ RectTransform:
   m_AnchoredPosition: {x: 292.2, y: -0.000061035156}
   m_SizeDelta: {x: 98.4, y: 107.3}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &571350438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571350436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cee82f85861214198600a80ccb8bdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textCategorie: {fileID: 552922900}
 --- !u!114 &571350439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21312,9 +21302,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 571350438}
-        m_TargetAssemblyTypeName: ChangeCategorie, Assembly-CSharp
-        m_MethodName: ChangeCategorieForward
+      - m_Target: {fileID: 571350442}
+        m_TargetAssemblyTypeName: Age, Assembly-CSharp
+        m_MethodName: ChangeCategoryTextForward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21386,6 +21376,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571350436}
   m_CullTransparentMesh: 1
+--- !u!114 &571350442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571350436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2ae6ab464657f45b309d440d272b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textCategorie: {fileID: 552922900}
+  femaleFitYoung: {fileID: 0}
+  femaleSlimYoung: {fileID: 0}
+  femaleChubbyYoung: {fileID: 0}
+  femaleFitOld: {fileID: 0}
+  femaleSlimOld: {fileID: 0}
+  femaleChubbyOld: {fileID: 0}
 --- !u!1 &574131360
 GameObject:
   m_ObjectHideFlags: 0
@@ -22804,10 +22813,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 623067252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cee82f85861214198600a80ccb8bdf, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ec43e2e704da0045a0beab3997974a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textCategorie: {fileID: 552922900}
+  femaleA7: {fileID: 0}
+  femaleBabyBangs: {fileID: 0}
+  femaleLongHigh: {fileID: 0}
+  femalePonytailBack: {fileID: 0}
+  femalePonytailL: {fileID: 0}
+  femalePonytailR: {fileID: 0}
+  femaleDoubleLow: {fileID: 0}
+  femaleMessyHigh: {fileID: 0}
+  femaleMessyPonytailBack: {fileID: 0}
+  femaleSamuraiBun: {fileID: 0}
+  femaleSideBangs: {fileID: 0}
+  femaleSideBangsO: {fileID: 0}
+  femaleSpaceBun: {fileID: 0}
+  femaleStraightShortLow: {fileID: 0}
 --- !u!114 &623067255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22853,8 +22876,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 623067254}
-        m_TargetAssemblyTypeName: ChangeCategorie, Assembly-CSharp
-        m_MethodName: ChangeCategorieBack
+        m_TargetAssemblyTypeName: Hairstyle, Assembly-CSharp
+        m_MethodName: ChangeCategoryTextBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23152,10 +23175,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 628540883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cee82f85861214198600a80ccb8bdf, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ec43e2e704da0045a0beab3997974a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textCategorie: {fileID: 552922900}
+  femaleA7: {fileID: 0}
+  femaleBabyBangs: {fileID: 0}
+  femaleLongHigh: {fileID: 0}
+  femalePonytailBack: {fileID: 0}
+  femalePonytailL: {fileID: 0}
+  femalePonytailR: {fileID: 0}
+  femaleDoubleLow: {fileID: 0}
+  femaleMessyHigh: {fileID: 0}
+  femaleMessyPonytailBack: {fileID: 0}
+  femaleSamuraiBun: {fileID: 0}
+  femaleSideBangs: {fileID: 0}
+  femaleSideBangsO: {fileID: 0}
+  femaleSpaceBun: {fileID: 0}
+  femaleStraightShortLow: {fileID: 0}
 --- !u!114 &628540886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23201,8 +23238,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 628540885}
-        m_TargetAssemblyTypeName: ChangeCategorie, Assembly-CSharp
-        m_MethodName: ChangeCategorieForward
+        m_TargetAssemblyTypeName: Hairstyle, Assembly-CSharp
+        m_MethodName: ChangeCategoryTextForward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26660,6 +26697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874b08c4aa220c84d9a2bf6e2260ffa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   femaleFit: {fileID: 782756854}
   femaleSlim: {fileID: 1202383191}
   femaleChubby: {fileID: 1944751753}
@@ -35025,10 +35063,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 917367578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cee82f85861214198600a80ccb8bdf, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d2ae6ab464657f45b309d440d272b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textCategorie: {fileID: 552922900}
+  femaleFitYoung: {fileID: 0}
+  femaleSlimYoung: {fileID: 0}
+  femaleChubbyYoung: {fileID: 0}
+  femaleFitOld: {fileID: 0}
+  femaleSlimOld: {fileID: 0}
+  femaleChubbyOld: {fileID: 0}
 --- !u!114 &917367581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35074,8 +35118,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 917367580}
-        m_TargetAssemblyTypeName: ChangeCategorie, Assembly-CSharp
-        m_MethodName: ChangeCategorieBack
+        m_TargetAssemblyTypeName: Age, Assembly-CSharp
+        m_MethodName: ChangeCategoryTextBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36137,8 +36181,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 940144092}
-        m_TargetAssemblyTypeName: ChangeCategorie, Assembly-CSharp
-        m_MethodName: ChangeCategorieForward
+        m_TargetAssemblyTypeName: Haircolor, Assembly-CSharp
+        m_MethodName: ChangeCategoryTextForward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36219,10 +36263,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 940144087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cee82f85861214198600a80ccb8bdf, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b47626b2f336b545bf38ed3f7472a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textCategorie: {fileID: 552922900}
+  colorCategorie: {r: 0, g: 0, b: 0, a: 0}
+  femaleA7: {fileID: 0}
+  femaleBabyBangs: {fileID: 0}
+  femaleLongHigh: {fileID: 0}
+  femalePonytailBack: {fileID: 0}
+  femalePonytailL: {fileID: 0}
+  femalePonytailR: {fileID: 0}
+  femaleDoubleLow: {fileID: 0}
+  femaleMessyHigh: {fileID: 0}
+  femaleMessyPonytailBack: {fileID: 0}
+  femaleSamuraiBun: {fileID: 0}
+  femaleSideBangs: {fileID: 0}
+  femaleSideBangsO: {fileID: 0}
+  femaleSpaceBun: {fileID: 0}
+  femaleStraightShortLow: {fileID: 0}
 --- !u!1 &941085327
 GameObject:
   m_ObjectHideFlags: 0
@@ -41377,6 +41436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b47626b2f336b545bf38ed3f7472a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   colorCategorie: {r: 0.8207547, g: 0.15873085, b: 0.5216417, a: 1}
   femaleA7: {fileID: 385624322}
   femaleBabyBangs: {fileID: 984358299}
@@ -42616,10 +42676,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1093687342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cee82f85861214198600a80ccb8bdf, type: 3}
+  m_Script: {fileID: 11500000, guid: 874b08c4aa220c84d9a2bf6e2260ffa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textCategorie: {fileID: 552922900}
+  femaleFit: {fileID: 0}
+  femaleSlim: {fileID: 0}
+  femaleChubby: {fileID: 0}
 --- !u!114 &1093687345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42665,8 +42728,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1093687344}
-        m_TargetAssemblyTypeName: ChangeCategorie, Assembly-CSharp
-        m_MethodName: ChangeCategorieBack
+        m_TargetAssemblyTypeName: Bodytype, Assembly-CSharp
+        m_MethodName: ChangeCategoryTextBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42687,6 +42750,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1575526458}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1093687346
 MonoBehaviour:
@@ -50006,6 +50081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2ae6ab464657f45b309d440d272b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   femaleFitYoung: {fileID: 782756854}
   femaleSlimYoung: {fileID: 1202383191}
   femaleChubbyYoung: {fileID: 1944751753}
@@ -52321,6 +52397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874b08c4aa220c84d9a2bf6e2260ffa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   femaleFit: {fileID: 782756854}
   femaleSlim: {fileID: 1202383191}
   femaleChubby: {fileID: 1944751753}
@@ -53009,8 +53086,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1379204820}
-        m_TargetAssemblyTypeName: ChangeCategorie, Assembly-CSharp
-        m_MethodName: ChangeCategorieBack
+        m_TargetAssemblyTypeName: Haircolor, Assembly-CSharp
+        m_MethodName: ChangeCategoryTextBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -53091,10 +53168,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1379204815}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cee82f85861214198600a80ccb8bdf, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b47626b2f336b545bf38ed3f7472a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textCategorie: {fileID: 552922900}
+  colorCategorie: {r: 0, g: 0, b: 0, a: 0}
+  femaleA7: {fileID: 0}
+  femaleBabyBangs: {fileID: 0}
+  femaleLongHigh: {fileID: 0}
+  femalePonytailBack: {fileID: 0}
+  femalePonytailL: {fileID: 0}
+  femalePonytailR: {fileID: 0}
+  femaleDoubleLow: {fileID: 0}
+  femaleMessyHigh: {fileID: 0}
+  femaleMessyPonytailBack: {fileID: 0}
+  femaleSamuraiBun: {fileID: 0}
+  femaleSideBangs: {fileID: 0}
+  femaleSideBangsO: {fileID: 0}
+  femaleSpaceBun: {fileID: 0}
+  femaleStraightShortLow: {fileID: 0}
 --- !u!1 &1380838757
 GameObject:
   m_ObjectHideFlags: 0
@@ -55209,6 +55301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b47626b2f336b545bf38ed3f7472a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   colorCategorie: {r: 0.5943396, g: 0.13194594, b: 0.103729084, a: 1}
   femaleA7: {fileID: 385624322}
   femaleBabyBangs: {fileID: 984358299}
@@ -56839,6 +56932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ec43e2e704da0045a0beab3997974a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   femaleA7: {fileID: 385624320}
   femaleBabyBangs: {fileID: 984358297}
   femaleLongHigh: {fileID: 1189051683}
@@ -61097,10 +61191,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1555128415}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cee82f85861214198600a80ccb8bdf, type: 3}
+  m_Script: {fileID: 11500000, guid: 69f3cf4f9f053444e9ac7d055e836fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textCategorie: {fileID: 552922900}
+  femaleBaseBody: {fileID: 0}
 --- !u!114 &1555128418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61146,8 +61241,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1555128417}
-        m_TargetAssemblyTypeName: ChangeCategorie, Assembly-CSharp
-        m_MethodName: ChangeCategorieBack
+        m_TargetAssemblyTypeName: Skincolor, Assembly-CSharp
+        m_MethodName: ChangeCategoryTextBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -66071,6 +66166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ec43e2e704da0045a0beab3997974a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   femaleA7: {fileID: 385624320}
   femaleBabyBangs: {fileID: 984358297}
   femaleLongHigh: {fileID: 1189051683}
@@ -66593,6 +66689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b47626b2f336b545bf38ed3f7472a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   colorCategorie: {r: 0.5943396, g: 0.13194594, b: 0.103729084, a: 1}
   femaleA7: {fileID: 385624322}
   femaleBabyBangs: {fileID: 984358299}
@@ -69769,7 +69866,7 @@ GameObject:
   - component: {fileID: 1769072163}
   - component: {fileID: 1769072162}
   - component: {fileID: 1769072161}
-  - component: {fileID: 1769072160}
+  - component: {fileID: 1769072164}
   m_Layer: 5
   m_Name: bodytype_categories_button_right
   m_TagString: Untagged
@@ -69797,19 +69894,6 @@ RectTransform:
   m_AnchoredPosition: {x: 292.2, y: -0.000061035156}
   m_SizeDelta: {x: 98.4, y: 107.3}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1769072160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769072158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cee82f85861214198600a80ccb8bdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textCategorie: {fileID: 552922900}
 --- !u!114 &1769072161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69854,9 +69938,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1769072160}
-        m_TargetAssemblyTypeName: ChangeCategorie, Assembly-CSharp
-        m_MethodName: ChangeCategorieForward
+      - m_Target: {fileID: 1769072164}
+        m_TargetAssemblyTypeName: Bodytype, Assembly-CSharp
+        m_MethodName: ChangeCategoryTextForward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -69928,6 +70012,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769072158}
   m_CullTransparentMesh: 1
+--- !u!114 &1769072164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769072158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 874b08c4aa220c84d9a2bf6e2260ffa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textCategorie: {fileID: 552922900}
+  femaleFit: {fileID: 0}
+  femaleSlim: {fileID: 0}
+  femaleChubby: {fileID: 0}
 --- !u!1 &1769585835
 GameObject:
   m_ObjectHideFlags: 0
@@ -81878,7 +81978,7 @@ GameObject:
   - component: {fileID: 2067914370}
   - component: {fileID: 2067914369}
   - component: {fileID: 2067914368}
-  - component: {fileID: 2067914367}
+  - component: {fileID: 2067914371}
   m_Layer: 5
   m_Name: skincolor_categories_button_right
   m_TagString: Untagged
@@ -81906,19 +82006,6 @@ RectTransform:
   m_AnchoredPosition: {x: 292.2, y: -0.000061035156}
   m_SizeDelta: {x: 98.4, y: 107.3}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2067914367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2067914365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cee82f85861214198600a80ccb8bdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textCategorie: {fileID: 552922900}
 --- !u!114 &2067914368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81963,9 +82050,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2067914367}
-        m_TargetAssemblyTypeName: ChangeCategorie, Assembly-CSharp
-        m_MethodName: ChangeCategorieForward
+      - m_Target: {fileID: 2067914371}
+        m_TargetAssemblyTypeName: Skincolor, Assembly-CSharp
+        m_MethodName: ChangeCategoryTextForward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -82037,6 +82124,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067914365}
   m_CullTransparentMesh: 1
+--- !u!114 &2067914371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067914365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f3cf4f9f053444e9ac7d055e836fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textCategorie: {fileID: 552922900}
+  femaleBaseBody: {fileID: 0}
 --- !u!1 &2068142536
 GameObject:
   m_ObjectHideFlags: 0
@@ -83984,6 +84085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b47626b2f336b545bf38ed3f7472a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textCategorie: {fileID: 0}
   colorCategorie: {r: 0.8207547, g: 0.15873085, b: 0.5216417, a: 1}
   femaleA7: {fileID: 385624322}
   femaleBabyBangs: {fileID: 984358299}
