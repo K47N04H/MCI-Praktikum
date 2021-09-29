@@ -14,8 +14,19 @@ public class Skincolor : MonoBehaviour
         new Color(0.282353f, 0.2156863f, 0.1568628f, 1f)
      };
 
+    public TMPro.TMP_Text textCategorie;
     public Renderer femaleBaseBody;
     private int numberSkincolor = 0;
+
+    public void ChangeCategoryTextForward()
+    {
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Haircolor";
+    }
+
+    public void ChangeCategoryTextBack()
+    {
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Age";
+    }
 
     public void ChangeSettingSkincolorForward()
     {

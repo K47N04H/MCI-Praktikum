@@ -6,6 +6,7 @@ using TMPro;
 
 public class Hairstyle : MonoBehaviour
 {
+    public TMPro.TMP_Text textCategorie;
     public GameObject femaleA7;
     public GameObject femaleBabyBangs;
     public GameObject femaleLongHigh;
@@ -22,6 +23,16 @@ public class Hairstyle : MonoBehaviour
     public GameObject femaleStraightShortLow;
 
     private int numberHairstyle = 0;
+
+    public void ChangeCategoryTextForward()
+    {
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Eyecolor";
+    }
+
+    public void ChangeCategoryTextBack()
+    {
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Haircolor";
+    }
 
     public void ChangeSettingHairstyleForward()
     {
