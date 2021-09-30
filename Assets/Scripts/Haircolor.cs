@@ -10,7 +10,11 @@ public class Haircolor : MonoBehaviour
     Color[] haircolor =
     {
         new Color(1, 1f, 1f, 1f),
+        new Color(0.8588235f, 0.8588235f, 0.8588235f, 1f),
+        new Color(0.7215686f, 0.5921569f, 0.4705882f, 1f),
+        new Color(0.3058824f, 0.2627451f, 0.2470588f, 1f),
         new Color(0.5943396f, 0.1319459f, 0.1037291f, 1f),
+        new Color(0.03529412f, 0.03137255f, 0.02352941f, 1f),
         new Color(0.07266822f, 0.6698113f, 0.1575639f, 1),
         new Color(0.0745098f, 0.1679017f, 0.6705883f, 1f),
         new Color(0.8207547f, 0.1587308f, 0.5216417f, 1f)
@@ -33,7 +37,7 @@ public class Haircolor : MonoBehaviour
     public Renderer femaleSpaceBun;
     public Renderer femaleStraightShortLow;
 
-    private static List<int> colors = new List<int> { 0, 1, 2, 3, 4 };
+    private static List<int> colors = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
 
 
     public void ChangeCategoryTextForward()
@@ -94,5 +98,8 @@ public class Haircolor : MonoBehaviour
         femaleMessyPonytailBack.material.color = haircolor[currentColor];
         femaleSamuraiBun.material.color = haircolor[currentColor];
         femaleSideBangs.material.color = haircolor[currentColor];
+        femaleSideBangsO.material.color = haircolor[currentColor];
+        femaleSpaceBun.material.color = haircolor[currentColor];
+        femaleStraightShortLow.material.color = haircolor[currentColor];
     }
 }

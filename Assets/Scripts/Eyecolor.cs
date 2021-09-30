@@ -32,29 +32,29 @@ public class Eyecolor : MonoBehaviour
     {
         if (numberEyecolor == 0)
         {
-            femaleBaseEye.materials[1].color = eyecolor[1];
-            femaleBaseEye.materials[3].color = eyecolor[1];
+            femaleBaseEye.materials[0].color = eyecolor[1];
+            femaleBaseEye.materials[2].color = eyecolor[1];
             numberEyecolor += 1;
         }
 
         else if (numberEyecolor == 1)
         {
-            femaleBaseEye.materials[1].color = eyecolor[2];
-            femaleBaseEye.materials[3].color = eyecolor[2];
+            femaleBaseEye.materials[0].color = eyecolor[2];
+            femaleBaseEye.materials[2].color = eyecolor[2];
             numberEyecolor += 1;
         }
 
         else if (numberEyecolor == 2)
         {
-            femaleBaseEye.materials[1].color = eyecolor[3];
-            femaleBaseEye.materials[3].color = eyecolor[3];
+            femaleBaseEye.materials[0].color = eyecolor[3];
+            femaleBaseEye.materials[2].color = eyecolor[3];
             numberEyecolor += 1;
         }
 
         else if (numberEyecolor == 3)
         {
-            femaleBaseEye.materials[1].color = eyecolor[0];
-            femaleBaseEye.materials[3].color = eyecolor[0];
+            femaleBaseEye.materials[0].color = eyecolor[0];
+            femaleBaseEye.materials[2].color = eyecolor[0];
             numberEyecolor = 0;
         }
     }
