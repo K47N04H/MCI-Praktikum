@@ -43001,22 +43001,22 @@ MonoBehaviour:
 
     Body type
 
-    Age group
+    Age
 
-    Skin colour
+    Skincolour
 
-    Hair style
+    Haircolour
 
-    Hair
-    colour
+    Hairstyle
 
-    Eye colour
+    Eyecolour
 
     Beard
 
-    Clothing top
+    Clothes
+    top
 
-    Clothing bottom
+    Clothes bottom
 
     Shoes'
   m_isRightToLeft: 0
