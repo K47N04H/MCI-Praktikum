@@ -21,6 +21,18 @@ public class ClothesTopColor : MonoBehaviour
 
     public TMPro.TMP_Text textCategorie;
     public Renderer femaleTunic;
+    public GameObject femaleFitYoung;
+    public GameObject femaleSlimYoung;
+    public GameObject femaleChubbyYoung;
+    public GameObject femaleFitOld;
+    public GameObject femaleSlimOld;
+    public GameObject femaleChubbyOld;
+    public GameObject maleFitYoung;
+    public GameObject maleSlimYoung;
+    public GameObject maleChubbyYoung;
+    public GameObject maleFitOld;
+    public GameObject maleSlimOld;
+    public GameObject maleChubbyOld;
 
     private static List<int> colors = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8};
 
@@ -31,7 +43,14 @@ public class ClothesTopColor : MonoBehaviour
 
     public void ChangeCategoryTextBack()
     {
-        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Eyecolor";
+        if (femaleFitYoung.activeInHierarchy == true || femaleSlimYoung.activeInHierarchy == true || femaleChubbyYoung.activeInHierarchy == true || femaleFitOld.activeInHierarchy == true || femaleSlimOld.activeInHierarchy == true || femaleChubbyOld.activeInHierarchy == true)
+        {
+            textCategorie.GetComponent<TMPro.TMP_Text>().text = "Eyecolor";
+        }
+        else if (maleFitYoung.activeInHierarchy == true || maleSlimYoung.activeInHierarchy == true || maleChubbyYoung.activeInHierarchy == true || maleFitOld.activeInHierarchy == true || maleSlimOld.activeInHierarchy == true || maleChubbyOld.activeInHierarchy == true)
+        {
+            textCategorie.GetComponent<TMPro.TMP_Text>().text = "Beard";
+        }
     }
 
     public void ChangeSettingTopcolorForward()

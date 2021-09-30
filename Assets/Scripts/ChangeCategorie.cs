@@ -6,148 +6,103 @@ using TMPro;
 
 public class ChangeCategorie : MonoBehaviour
 {
-    string[] categories = {"Gender","Bodytype","Age", "Skincolor","Hairstyle","Haircolor","Eyestyle","Beard","Clothes top color","Clothes bottom color","Shoes"};
     public TMPro.TMP_Text textCategorie;
-    private int numberCategory = 0;
+    public GameObject femaleFitYoung;
+    public GameObject femaleSlimYoung;
+    public GameObject femaleChubbyYoung;
+    public GameObject femaleFitOld;
+    public GameObject femaleSlimOld;
+    public GameObject femaleChubbyOld;
+    public GameObject maleFitYoung;
+    public GameObject maleSlimYoung;
+    public GameObject maleChubbyYoung;
+    public GameObject maleFitOld;
+    public GameObject maleSlimOld;
+    public GameObject maleChubbyOld;
+    public GameObject femaleFitYoungCategory;
+    public GameObject femaleSlimYoungCategory;
+    public GameObject femaleChubbyYoungCategory;
+    public GameObject femaleFitOldCategory;
+    public GameObject femaleSlimOldCategory;
+    public GameObject femaleChubbyOldCategory;
+    public GameObject maleFitYoungCategory;
+    public GameObject maleSlimYoungCategory;
+    public GameObject maleChubbyYoungCategory;
+    public GameObject maleFitOldCategory;
+    public GameObject maleSlimOldCategory;
+    public GameObject maleChubbyOldCategory;
 
-
-    // Change categorie forward while clicking the right button
-    public void ChangeCategorieForward()
+    public void ChangeCategoryTextForward()
     {
-        if (numberCategory == 0)
-        {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[0];
-            numberCategory += 1;
-        }
-
-        else if (numberCategory == 1)
-        {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[1];
-            numberCategory += 1;
-        }
-
-        else if (numberCategory == 2)
-        {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[2];
-            numberCategory += 1;
-        }
-
-        else if (numberCategory == 3)
-        {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[3];
-            numberCategory += 1;
-        }
-
-        else if (numberCategory == 4)
-        {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[4];
-            numberCategory += 1;
-        }
-
-        else if (numberCategory == 5)
-        {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[5];
-            numberCategory += 1;
-        }
-
-        else if (numberCategory == 6)
-        {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[6];
-            numberCategory += 1;
-        }
-
-        else if (numberCategory == 7)
-        {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[7];
-            numberCategory += 1;
-        }
-
-        else if (numberCategory == 8)
-        {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[8];
-            numberCategory += 1;
-        }
-
-        else if (numberCategory == 9)
-        {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[9];
-            numberCategory += 1;
-        }
-
-        else if (numberCategory == 10)
-        {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[10];
-            numberCategory += 1;
-        }
-
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Bodytype";
     }
 
-    public void ChangeCategorieBack()
+    public void ChangeCategoryTextBack()
     {
-        if (numberCategory == 0)
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Gender";
+    }
+
+    public void ChangeAvatar()
+    {
+
+        if (femaleSlimYoung.activeInHierarchy == true)
         {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[0];
-            numberCategory -= 1;
+            femaleSlimYoungCategory.SetActive(true);
         }
 
-        else if (numberCategory == 1)
+        else if (femaleChubbyYoung.activeInHierarchy == true)
         {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[1];
-            numberCategory -= 1;
+            femaleChubbyYoungCategory.SetActive(true);
         }
 
-        else if (numberCategory == 2)
+        else if (femaleFitYoung.activeInHierarchy == true)
         {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[2];
-            numberCategory -= 1;
+            femaleFitYoungCategory.SetActive(true);
         }
 
-        else if (numberCategory == 3)
+        else if (maleFitYoung.activeInHierarchy == true)
         {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[3];
-            numberCategory -= 1;
+            maleFitYoungCategory.SetActive(true);
         }
 
-        else if (numberCategory == 4)
+        else if (maleSlimYoung.activeInHierarchy == true)
         {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[4];
-            numberCategory -= 1;
+            maleSlimYoungCategory.SetActive(true);
         }
 
-        else if (numberCategory == 5)
+        else if (maleChubbyYoung.activeInHierarchy == true)
         {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[5];
-            numberCategory -= 1;
+            maleChubbyYoungCategory.SetActive(true);
         }
 
-        else if (numberCategory == 6)
+        else if (femaleSlimOld.activeInHierarchy == true)
         {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[6];
-            numberCategory -= 1;
+            femaleSlimOldCategory.SetActive(true);
         }
 
-        else if (numberCategory == 7)
+        else if (femaleChubbyOld.activeInHierarchy == true)
         {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[7];
-            numberCategory -= 1;
+            femaleChubbyOldCategory.SetActive(true);
         }
 
-        else if (numberCategory == 8)
+        else if (femaleFitOld.activeInHierarchy == true)
         {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[8];
-            numberCategory -= 1;
+            femaleFitOldCategory.SetActive(true);
         }
 
-        else if (numberCategory == 9)
+        else if (maleFitOld.activeInHierarchy == true)
         {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[9];
-            numberCategory -= 1;
+            maleFitOldCategory.SetActive(true);
         }
 
-        else if (numberCategory == 10)
+        else if (maleSlimOld.activeInHierarchy == true)
         {
-            textCategorie.GetComponent<TMPro.TMP_Text>().text = categories[10];
-            numberCategory -= 1;
+            maleSlimOldCategory.SetActive(true);
+        }
+
+        else if (maleChubbyOld.activeInHierarchy == true)
+        {
+            maleChubbyOldCategory.SetActive(true);
         }
     }
 }

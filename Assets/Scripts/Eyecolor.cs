@@ -16,11 +16,31 @@ public class Eyecolor : MonoBehaviour
 
     public TMPro.TMP_Text textCategorie;
     public Renderer femaleBaseEye;
+    public GameObject femaleFitYoung;
+    public GameObject femaleSlimYoung;
+    public GameObject femaleChubbyYoung;
+    public GameObject femaleFitOld;
+    public GameObject femaleSlimOld;
+    public GameObject femaleChubbyOld;
+    public GameObject maleFitYoung;
+    public GameObject maleSlimYoung;
+    public GameObject maleChubbyYoung;
+    public GameObject maleFitOld;
+    public GameObject maleSlimOld;
+    public GameObject maleChubbyOld;
     private int numberEyecolor = 0;
 
     public void ChangeCategoryTextForward()
     {
-        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Clothes top";
+
+        if (femaleFitYoung.activeInHierarchy == true || femaleSlimYoung.activeInHierarchy == true || femaleChubbyYoung.activeInHierarchy == true || femaleFitOld.activeInHierarchy == true || femaleSlimOld.activeInHierarchy == true || femaleChubbyOld.activeInHierarchy == true)
+        {
+            textCategorie.GetComponent<TMPro.TMP_Text>().text = "Clothes top";
+        }
+        else if (maleFitYoung.activeInHierarchy == true || maleSlimYoung.activeInHierarchy == true || maleChubbyYoung.activeInHierarchy == true || maleFitOld.activeInHierarchy == true || maleSlimOld.activeInHierarchy == true || maleChubbyOld.activeInHierarchy == true)
+        {
+            textCategorie.GetComponent<TMPro.TMP_Text>().text = "Beard";
+        }
     }
 
     public void ChangeCategoryTextBack()

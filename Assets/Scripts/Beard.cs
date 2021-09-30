@@ -21,12 +21,12 @@ public class Beard : MonoBehaviour
 
     public void ChangeCategoryTextForward()
     {
-        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Eyecolor";
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Clothes Top";
     }
 
     public void ChangeCategoryTextBack()
     {
-        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Haircolor";
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Eyecolor";
     }
 
     public void ChangeSettingBeardstyleForward()
@@ -54,8 +54,8 @@ public class Beard : MonoBehaviour
             chinCurtainThick.SetActive(false);
             mustacheChevron.SetActive(false);
             mustachePencil.SetActive(false);
-            sideburnsSparse.SetActive(false);
-            sideburnsStubble.SetActive(false);
+            sideburnsSparse.SetActive(true);
+            sideburnsStubble.SetActive(true);
 
 
             numberBeardstyle += 1;
@@ -66,7 +66,7 @@ public class Beard : MonoBehaviour
             anchorGoat.SetActive(false);
             anchorSparse.SetActive(false);
             chinCurtainStubble.SetActive(false);
-            chinCurtainThick.SetActive(false);
+            chinCurtainThick.SetActive(true);
             mustacheChevron.SetActive(false);
             mustachePencil.SetActive(false);
             sideburnsSparse.SetActive(false);
@@ -80,7 +80,7 @@ public class Beard : MonoBehaviour
         else if (numberBeardstyle == 3)
         {
             anchorGoat.SetActive(false);
-            anchorSparse.SetActive(false);
+            anchorSparse.SetActive(true);
             chinCurtainStubble.SetActive(false);
             chinCurtainThick.SetActive(false);
             mustacheChevron.SetActive(false);
@@ -99,7 +99,7 @@ public class Beard : MonoBehaviour
             chinCurtainStubble.SetActive(false);
             chinCurtainThick.SetActive(false);
             mustacheChevron.SetActive(false);
-            mustachePencil.SetActive(false);
+            mustachePencil.SetActive(true);
             sideburnsSparse.SetActive(false);
             sideburnsStubble.SetActive(false);
 
@@ -109,15 +109,43 @@ public class Beard : MonoBehaviour
 
         else if (numberBeardstyle == 5)
         {
-            anchorGoat.SetActive(false);
+            anchorGoat.SetActive(true);
             anchorSparse.SetActive(false);
             chinCurtainStubble.SetActive(false);
             chinCurtainThick.SetActive(false);
-            mustacheChevron.SetActive(false);
+            mustacheChevron.SetActive(true);
             mustachePencil.SetActive(false);
             sideburnsSparse.SetActive(false);
             sideburnsStubble.SetActive(false);
      
+            numberBeardstyle += 1;
+        }
+
+        else if (numberBeardstyle == 6)
+        {
+            anchorGoat.SetActive(false);
+            anchorSparse.SetActive(false);
+            chinCurtainStubble.SetActive(false);
+            chinCurtainThick.SetActive(true);
+            mustacheChevron.SetActive(true);
+            mustachePencil.SetActive(false);
+            sideburnsSparse.SetActive(false);
+            sideburnsStubble.SetActive(false);
+
+            numberBeardstyle += 1;
+        }
+
+        else if (numberBeardstyle == 7)
+        {
+            anchorGoat.SetActive(true);
+            anchorSparse.SetActive(true);
+            chinCurtainStubble.SetActive(true);
+            chinCurtainThick.SetActive(true);
+            mustacheChevron.SetActive(true);
+            mustachePencil.SetActive(true);
+            sideburnsSparse.SetActive(true);
+            sideburnsStubble.SetActive(true);
+
             numberBeardstyle = 0;
         }
     }
@@ -129,27 +157,25 @@ public class Beard : MonoBehaviour
             anchorGoat.SetActive(false);
             anchorSparse.SetActive(false);
             chinCurtainStubble.SetActive(false);
-            chinCurtainThick.SetActive(false);
-            mustacheChevron.SetActive(false);
+            chinCurtainThick.SetActive(true);
+            mustacheChevron.SetActive(true);
             mustachePencil.SetActive(false);
             sideburnsSparse.SetActive(false);
             sideburnsStubble.SetActive(false);
- 
 
             numberBeardstyle += 1;
         }
 
         else if (numberBeardstyle == 1)
         {
-            anchorGoat.SetActive(false);
+            anchorGoat.SetActive(true);
             anchorSparse.SetActive(false);
             chinCurtainStubble.SetActive(false);
             chinCurtainThick.SetActive(false);
-            mustacheChevron.SetActive(false);
+            mustacheChevron.SetActive(true);
             mustachePencil.SetActive(false);
             sideburnsSparse.SetActive(false);
             sideburnsStubble.SetActive(false);
-  
 
             numberBeardstyle += 1;
         }
@@ -161,7 +187,7 @@ public class Beard : MonoBehaviour
             chinCurtainStubble.SetActive(false);
             chinCurtainThick.SetActive(false);
             mustacheChevron.SetActive(false);
-            mustachePencil.SetActive(false);
+            mustachePencil.SetActive(true);
             sideburnsSparse.SetActive(false);
             sideburnsStubble.SetActive(false);
 
@@ -172,13 +198,14 @@ public class Beard : MonoBehaviour
         else if (numberBeardstyle == 3)
         {
             anchorGoat.SetActive(false);
-            anchorSparse.SetActive(false);
+            anchorSparse.SetActive(true);
             chinCurtainStubble.SetActive(false);
             chinCurtainThick.SetActive(false);
             mustacheChevron.SetActive(false);
             mustachePencil.SetActive(false);
             sideburnsSparse.SetActive(false);
             sideburnsStubble.SetActive(false);
+
 
             numberBeardstyle += 1;
         }
@@ -188,7 +215,7 @@ public class Beard : MonoBehaviour
             anchorGoat.SetActive(false);
             anchorSparse.SetActive(false);
             chinCurtainStubble.SetActive(false);
-            chinCurtainThick.SetActive(false);
+            chinCurtainThick.SetActive(true);
             mustacheChevron.SetActive(false);
             mustachePencil.SetActive(false);
             sideburnsSparse.SetActive(false);
@@ -206,9 +233,38 @@ public class Beard : MonoBehaviour
             chinCurtainThick.SetActive(false);
             mustacheChevron.SetActive(false);
             mustachePencil.SetActive(false);
+            sideburnsSparse.SetActive(true);
+            sideburnsStubble.SetActive(true);
+
+
+            numberBeardstyle += 1;
+        }
+
+        else if (numberBeardstyle == 6)
+        {
+            anchorGoat.SetActive(false);
+            anchorSparse.SetActive(false);
+            chinCurtainStubble.SetActive(false);
+            chinCurtainThick.SetActive(false);
+            mustacheChevron.SetActive(false);
+            mustachePencil.SetActive(false);
             sideburnsSparse.SetActive(false);
             sideburnsStubble.SetActive(false);
 
+
+            numberBeardstyle += 1;
+        }
+
+        else if (numberBeardstyle == 7)
+        {
+            anchorGoat.SetActive(true);
+            anchorSparse.SetActive(true);
+            chinCurtainStubble.SetActive(true);
+            chinCurtainThick.SetActive(true);
+            mustacheChevron.SetActive(true);
+            mustachePencil.SetActive(true);
+            sideburnsSparse.SetActive(true);
+            sideburnsStubble.SetActive(true);
 
             numberBeardstyle = 0;
         }

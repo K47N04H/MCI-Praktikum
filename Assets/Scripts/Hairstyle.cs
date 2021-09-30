@@ -21,6 +21,11 @@ public class Hairstyle : MonoBehaviour
     public GameObject femaleSideBangsO;
     public GameObject femaleSpaceBun;
     public GameObject femaleStraightShortLow;
+    public GameObject maleHalfUp;
+    public GameObject maleSamuraiBun;
+    public GameObject maleShortBlowback;
+    public GameObject maleSpaceBun;
+    public GameObject maleUndercut;
 
     private int numberHairstyle = 0;
 
