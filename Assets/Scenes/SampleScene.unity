@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44932687, g: 0.49940008, b: 0.57570535, a: 1}
+  m_IndirectSpecularColor: {r: 0.44932753, g: 0.49940103, b: 0.5757063, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1943,8 +1943,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 292.2, y: -0.000061035156}
-  m_SizeDelta: {x: 98.4, y: 107.3}
+  m_AnchoredPosition: {x: 291.5, y: -0.000061035156}
+  m_SizeDelta: {x: 147.8, y: 152.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30876671
 MonoBehaviour:
@@ -2041,14 +2041,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.53333336, g: 0.64705884, b: 0.6313726, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: de50d1f4106f65545921a17c92cf0250, type: 3}
+  m_Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14417,6 +14417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 267329539}
   - component: {fileID: 267329538}
+  - component: {fileID: 267329540}
   m_Layer: 0
   m_Name: man young chubby
   m_TagString: Untagged
@@ -14483,6 +14484,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &267329540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267329537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 267329538}
+  mesh: {fileID: 1182098081}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &268138448
 GameObject:
   m_ObjectHideFlags: 0
@@ -31668,8 +31686,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 292.2, y: -0.000061035156}
-  m_SizeDelta: {x: 98.4, y: 107.3}
+  m_AnchoredPosition: {x: 291.5, y: -0.000061035156}
+  m_SizeDelta: {x: 147.8, y: 152.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &577676528
 MonoBehaviour:
@@ -31766,14 +31784,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.53333336, g: 0.64705884, b: 0.6313726, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: de50d1f4106f65545921a17c92cf0250, type: 3}
+  m_Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -31858,8 +31876,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 292.2, y: -0.000061035156}
-  m_SizeDelta: {x: 98.4, y: 107.3}
+  m_AnchoredPosition: {x: 291.5, y: -0.000061035156}
+  m_SizeDelta: {x: 147.8, y: 152.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &580544892
 MonoBehaviour:
@@ -31956,14 +31974,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.53333336, g: 0.64705884, b: 0.6313726, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: de50d1f4106f65545921a17c92cf0250, type: 3}
+  m_Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -41837,6 +41855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 782756856}
   - component: {fileID: 782756855}
+  - component: {fileID: 782756857}
   m_Layer: 0
   m_Name: woman young fit
   m_TagString: Untagged
@@ -41901,6 +41920,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &782756857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782756854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 782756855}
+  mesh: {fileID: 1745463008}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &783387004
 GameObject:
   m_ObjectHideFlags: 0
@@ -46006,6 +46042,7 @@ GameObject:
   m_Component:
   - component: {fileID: 861654574}
   - component: {fileID: 861654573}
+  - component: {fileID: 861654575}
   m_Layer: 0
   m_Name: man old chubby
   m_TagString: Untagged
@@ -46072,6 +46109,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &861654575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861654572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 861654573}
+  mesh: {fileID: 1107919463}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &862340344
 GameObject:
   m_ObjectHideFlags: 0
@@ -54620,6 +54674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 989390636}
   - component: {fileID: 989390635}
+  - component: {fileID: 989390637}
   m_Layer: 0
   m_Name: man old fit
   m_TagString: Untagged
@@ -54686,6 +54741,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &989390637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989390634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 989390635}
+  mesh: {fileID: 1074267884}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &990399230
 GameObject:
   m_ObjectHideFlags: 0
@@ -65299,6 +65371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1143598396}
   - component: {fileID: 1143598395}
+  - component: {fileID: 1143598397}
   m_Layer: 0
   m_Name: man young fit
   m_TagString: Untagged
@@ -65365,6 +65438,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1143598397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143598394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1143598395}
+  mesh: {fileID: 17469171}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &1145043040
 GameObject:
   m_ObjectHideFlags: 0
@@ -65873,6 +65963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1158898789}
   - component: {fileID: 1158898788}
+  - component: {fileID: 1158898790}
   m_Layer: 0
   m_Name: man young slim
   m_TagString: Untagged
@@ -65939,6 +66030,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1158898790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158898787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1158898788}
+  mesh: {fileID: 1796355961}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &1160635210
 GameObject:
   m_ObjectHideFlags: 0
@@ -68009,6 +68117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1202383193}
   - component: {fileID: 1202383192}
+  - component: {fileID: 1202383194}
   m_Layer: 0
   m_Name: woman young slim
   m_TagString: Untagged
@@ -68073,6 +68182,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1202383194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202383191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1202383192}
+  mesh: {fileID: 766808801}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &1206501955
 GameObject:
   m_ObjectHideFlags: 0
@@ -90887,6 +91013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1597738695}
   - component: {fileID: 1597738694}
+  - component: {fileID: 1597738696}
   m_Layer: 0
   m_Name: man old slim
   m_TagString: Untagged
@@ -90953,6 +91080,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1597738696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597738693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1597738694}
+  mesh: {fileID: 760573238}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &1597898502
 GameObject:
   m_ObjectHideFlags: 0
@@ -99092,6 +99236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1759151223}
   - component: {fileID: 1759151222}
+  - component: {fileID: 1759151224}
   m_Layer: 0
   m_Name: woman old fit
   m_TagString: Untagged
@@ -99156,6 +99301,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1759151224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759151221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1759151222}
+  mesh: {fileID: 1024616874}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &1761481553
 GameObject:
   m_ObjectHideFlags: 0
@@ -102110,6 +102272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1804454886}
   - component: {fileID: 1804454885}
+  - component: {fileID: 1804454887}
   m_Layer: 0
   m_Name: woman old chubby
   m_TagString: Untagged
@@ -102174,6 +102337,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1804454887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804454884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1804454885}
+  mesh: {fileID: 1470000897}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &1804601328
 GameObject:
   m_ObjectHideFlags: 0
@@ -109589,6 +109769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1944751755}
   - component: {fileID: 1944751754}
+  - component: {fileID: 1944751756}
   m_Layer: 0
   m_Name: woman young chubby
   m_TagString: Untagged
@@ -109653,6 +109834,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1944751756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944751753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1944751754}
+  mesh: {fileID: 1535802169}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &1945332513
 GameObject:
   m_ObjectHideFlags: 0
@@ -110111,6 +110309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1949828299}
   - component: {fileID: 1949828298}
+  - component: {fileID: 1949828300}
   m_Layer: 0
   m_Name: woman old slim
   m_TagString: Untagged
@@ -110175,6 +110374,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1949828300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949828297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb42aca02f618d4b9622ffe9537666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1949828298}
+  mesh: {fileID: 2126015413}
+  blendShapeIndex: 67
+  min: -90
+  max: -94
 --- !u!1 &1950097525
 GameObject:
   m_ObjectHideFlags: 0
@@ -119168,8 +119384,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 292.2, y: -0.000061035156}
-  m_SizeDelta: {x: 98.4, y: 107.3}
+  m_AnchoredPosition: {x: 291.5, y: -0.000061035156}
+  m_SizeDelta: {x: 147.8, y: 152.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2105663205
 MonoBehaviour:
@@ -119266,14 +119482,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.53333336, g: 0.64705884, b: 0.6313726, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: de50d1f4106f65545921a17c92cf0250, type: 3}
+  m_Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
