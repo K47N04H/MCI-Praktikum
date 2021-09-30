@@ -20,7 +20,7 @@ public class Eyecolor : MonoBehaviour
 
     public void ChangeCategoryTextForward()
     {
-        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Clothes top color";
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Clothes top";
     }
 
     public void ChangeCategoryTextBack()

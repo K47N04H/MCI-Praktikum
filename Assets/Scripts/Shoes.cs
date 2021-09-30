@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ClothesBottomColor : MonoBehaviour
+public class Shoes : MonoBehaviour
 {
-    Color[] bottomcolor =
+    Color[] shoescolor =
     {
        new Color(1f, 1f, 1f, 1f),
        new Color(0.8f, 0.6f, 1f, 1f),
@@ -20,21 +20,16 @@ public class ClothesBottomColor : MonoBehaviour
     };
 
     public TMPro.TMP_Text textCategorie;
-    public Renderer femaleTrouser;
+    public Renderer femaleSneakers;
 
-    private static List<int> colors = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8};
-
-    public void ChangeCategoryTextForward()
-    {
-        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Shoes";
-    }
+    private static List<int> colors = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
 
     public void ChangeCategoryTextBack()
     {
-        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Clothes Top";
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Clothes bottom";
     }
 
-    public void ChangeSettingBottomcolorForward()
+    public void ChangeSettingShoesForward()
     {
         int item = colors[0];
         colors.RemoveAt(0);
@@ -44,10 +39,10 @@ public class ClothesBottomColor : MonoBehaviour
 
         // Debug.Log("Forward: " + colors[0]);
 
-        femaleTrouser.material.color = bottomcolor[currentColor];
+        femaleSneakers.material.color = shoescolor[currentColor];
     }
 
-    public void ChangeSettingBottomcolorBack()
+    public void ChangeSettingShoesBack()
     {
         int item = colors[colors.Count - 1];
         colors.RemoveAt(colors.Count - 1);
@@ -57,6 +52,6 @@ public class ClothesBottomColor : MonoBehaviour
 
         // Debug.Log("BACK: " + colors[0]);
 
-        femaleTrouser.material.color = bottomcolor[currentColor];
+        femaleSneakers.material.color = shoescolor[currentColor];
     }
 }

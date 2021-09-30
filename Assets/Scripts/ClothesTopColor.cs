@@ -9,19 +9,24 @@ public class ClothesTopColor : MonoBehaviour
     Color[] topcolor =
     {
         new Color(1f, 1f, 1f, 1f),
-        new Color(0.5943396f, 0.1319459f, 0.1037291f, 1f),
-        new Color(0.07266822f, 0.6698113f, 0.1575639f, 1),
-        new Color(0.0745098f, 0.1679017f, 0.6705883f, 1f),
+        new Color(0.8f, 0.6f, 1f, 1f),
+        new Color(0.6627451f, 0.8196079f, 0.9686275f, 1),
+        new Color(0.7058824f, 0.9411765f, 0.654902f, 1f),
+        new Color(1f, 1f, 0.7490196f, 1f),
+        new Color(1f, 0.8745098f, 0.7450981f, 1f),
+        new Color(1f, 0.6941177f, 0.6901961f, 1f),
+        new Color(0f, 0f, 0f, 1f),
+        new Color(0.5f, 0.5f, 0.5f, 1f),
     };
 
     public TMPro.TMP_Text textCategorie;
     public Renderer femaleTunic;
 
-    private static List<int> colors = new List<int> { 0, 1, 2, 3 };
+    private static List<int> colors = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8};
 
     public void ChangeCategoryTextForward()
     {
-        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Clothes bottom color";
+        textCategorie.GetComponent<TMPro.TMP_Text>().text = "Clothes bottom";
     }
 
     public void ChangeCategoryTextBack()
