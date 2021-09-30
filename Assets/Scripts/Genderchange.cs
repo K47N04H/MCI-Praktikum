@@ -7,12 +7,18 @@ using TMPro;
 public class Genderchange : MonoBehaviour
 {
     public TMPro.TMP_Text textCategorie;
-    public GameObject femaleFit;
-    public GameObject femaleSlim;
-    public GameObject femaleChubby;
-    public GameObject maleFit;
-    public GameObject maleSlim;
-    public GameObject maleChubby;
+    public GameObject femaleFitYoung;
+    public GameObject femaleSlimYoung;
+    public GameObject femaleChubbyYoung;
+    public GameObject femaleFitOld;
+    public GameObject femaleSlimOld;
+    public GameObject femaleChubbyOld;
+    public GameObject maleFitYoung;
+    public GameObject maleSlimYoung;
+    public GameObject maleChubbyYoung;
+    public GameObject maleFitOld;
+    public GameObject maleSlimOld;
+    public GameObject maleChubbyOld;
 
     public void ChangeCategoryTextForward()
     {
@@ -24,131 +30,200 @@ public class Genderchange : MonoBehaviour
         textCategorie.GetComponent<TMPro.TMP_Text>().text = "Gender";
     }
 
-    public void ChangeGenderForward()
+    public void ChangeGender()
     {
 
-        if (femaleFit.activeInHierarchy == true)
+        if (femaleSlimYoung.activeInHierarchy == true)
         {
-            femaleFit.SetActive(false);
-            femaleSlim.SetActive(false);
-            femaleChubby.SetActive(false);
-            maleFit.SetActive(true);
-            maleSlim.SetActive(false);
-            maleChubby.SetActive(false);
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(false);
+            femaleFitYoung.SetActive(false);
+            femaleSlimYoung.SetActive(false);
+            femaleChubbyYoung.SetActive(false);
+            maleFitOld.SetActive(false);
+            maleSlimOld.SetActive(false);
+            maleChubbyOld.SetActive(false);
+            maleFitYoung.SetActive(false);
+            maleSlimYoung.SetActive(true);
+            maleChubbyYoung.SetActive(false);
         }
 
-        else if (femaleSlim.activeInHierarchy == true)
+        else if (femaleChubbyYoung.activeInHierarchy == true)
         {
-            femaleFit.SetActive(false);
-            femaleSlim.SetActive(false);
-            femaleChubby.SetActive(false);
-            maleFit.SetActive(false);
-            maleSlim.SetActive(true);
-            maleChubby.SetActive(false);
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(false);
+            femaleFitYoung.SetActive(false);
+            femaleSlimYoung.SetActive(false);
+            femaleChubbyYoung.SetActive(false);
+            maleFitOld.SetActive(false);
+            maleSlimOld.SetActive(false);
+            maleChubbyOld.SetActive(false);
+            maleFitYoung.SetActive(false);
+            maleSlimYoung.SetActive(false);
+            maleChubbyYoung.SetActive(true);
         }
 
-        else if (femaleChubby.activeInHierarchy == true)
+        else if (femaleFitYoung.activeInHierarchy == true)
         {
-            femaleFit.SetActive(false);
-            femaleSlim.SetActive(false);
-            femaleChubby.SetActive(false);
-            maleFit.SetActive(false);
-            maleSlim.SetActive(false);
-            maleChubby.SetActive(true);
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(false);
+            femaleFitYoung.SetActive(false);
+            femaleSlimYoung.SetActive(false);
+            femaleChubbyYoung.SetActive(false);
+            maleFitOld.SetActive(false);
+            maleSlimOld.SetActive(false);
+            maleChubbyOld.SetActive(false);
+            maleFitYoung.SetActive(true);
+            maleSlimYoung.SetActive(false);
+            maleChubbyYoung.SetActive(false);
         }
 
-        else if (maleFit.activeInHierarchy == true)
+        else if (maleFitYoung.activeInHierarchy == true)
         {
-            femaleFit.SetActive(true);
-            femaleSlim.SetActive(false);
-            femaleChubby.SetActive(false);
-            maleFit.SetActive(false);
-            maleSlim.SetActive(false);
-            maleChubby.SetActive(false);
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(false);
+            femaleFitYoung.SetActive(true);
+            femaleSlimYoung.SetActive(false);
+            femaleChubbyYoung.SetActive(false);
+            maleFitOld.SetActive(false);
+            maleSlimOld.SetActive(false);
+            maleChubbyOld.SetActive(false);
+            maleFitYoung.SetActive(false);
+            maleSlimYoung.SetActive(false);
+            maleChubbyYoung.SetActive(false);
         }
 
-        else if (maleSlim.activeInHierarchy == true)
+        else if (maleSlimYoung.activeInHierarchy == true)
         {
-            femaleFit.SetActive(false);
-            femaleSlim.SetActive(true);
-            femaleChubby.SetActive(false);
-            maleFit.SetActive(false);
-            maleSlim.SetActive(false);
-            maleChubby.SetActive(false);
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(false);
+            femaleFitYoung.SetActive(false);
+            femaleSlimYoung.SetActive(true);
+            femaleChubbyYoung.SetActive(false);
+            maleFitOld.SetActive(false);
+            maleSlimOld.SetActive(false);
+            maleChubbyOld.SetActive(false);
+            maleFitYoung.SetActive(false);
+            maleSlimYoung.SetActive(false);
+            maleChubbyYoung.SetActive(false);
         }
 
-        else if (maleChubby.activeInHierarchy == true)
+        else if (maleChubbyYoung.activeInHierarchy == true)
         {
-            femaleFit.SetActive(false);
-            femaleSlim.SetActive(false);
-            femaleChubby.SetActive(true);
-            maleFit.SetActive(false);
-            maleSlim.SetActive(false);
-            maleChubby.SetActive(false);
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(false);
+            femaleFitYoung.SetActive(false);
+            femaleSlimYoung.SetActive(false);
+            femaleChubbyYoung.SetActive(true);
+            maleFitOld.SetActive(false);
+            maleSlimOld.SetActive(false);
+            maleChubbyOld.SetActive(false);
+            maleFitYoung.SetActive(false);
+            maleSlimYoung.SetActive(false);
+            maleChubbyYoung.SetActive(false);
         }
 
-    }
-
-    public void ChangeGenderBack()
-    {
-        if (femaleFit.activeInHierarchy == true)
+        else if (femaleSlimOld.activeInHierarchy == true)
         {
-            femaleFit.SetActive(false);
-            femaleSlim.SetActive(false);
-            femaleChubby.SetActive(false);
-            maleFit.SetActive(true);
-            maleSlim.SetActive(false);
-            maleChubby.SetActive(false);
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(false);
+            femaleFitYoung.SetActive(false);
+            femaleSlimYoung.SetActive(false);
+            femaleChubbyYoung.SetActive(false);
+            maleFitOld.SetActive(false);
+            maleSlimOld.SetActive(true);
+            maleChubbyOld.SetActive(false);
+            maleFitYoung.SetActive(false);
+            maleSlimYoung.SetActive(false);
+            maleChubbyYoung.SetActive(false);
         }
 
-        else if (femaleSlim.activeInHierarchy == true)
+        else if (femaleChubbyOld.activeInHierarchy == true)
         {
-            femaleFit.SetActive(false);
-            femaleSlim.SetActive(false);
-            femaleChubby.SetActive(false);
-            maleFit.SetActive(false);
-            maleSlim.SetActive(true);
-            maleChubby.SetActive(false);
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(false);
+            femaleFitYoung.SetActive(false);
+            femaleSlimYoung.SetActive(false);
+            femaleChubbyYoung.SetActive(false);
+            maleFitOld.SetActive(false);
+            maleSlimOld.SetActive(false);
+            maleChubbyOld.SetActive(true);
+            maleFitYoung.SetActive(false);
+            maleSlimYoung.SetActive(false);
+            maleChubbyYoung.SetActive(false);
         }
 
-        else if (femaleChubby.activeInHierarchy == true)
+        else if (femaleFitOld.activeInHierarchy == true)
         {
-            femaleFit.SetActive(false);
-            femaleSlim.SetActive(false);
-            femaleChubby.SetActive(false);
-            maleFit.SetActive(false);
-            maleSlim.SetActive(false);
-            maleChubby.SetActive(true);
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(false);
+            femaleFitYoung.SetActive(false);
+            femaleSlimYoung.SetActive(false);
+            femaleChubbyYoung.SetActive(false);
+            maleFitOld.SetActive(true);
+            maleSlimOld.SetActive(false);
+            maleChubbyOld.SetActive(false);
+            maleFitYoung.SetActive(false);
+            maleSlimYoung.SetActive(false);
+            maleChubbyYoung.SetActive(false);
         }
 
-        else if (maleFit.activeInHierarchy == true)
+        else if (maleFitOld.activeInHierarchy == true)
         {
-            femaleFit.SetActive(true);
-            femaleSlim.SetActive(false);
-            femaleChubby.SetActive(false);
-            maleFit.SetActive(false);
-            maleSlim.SetActive(false);
-            maleChubby.SetActive(false);
+            femaleFitOld.SetActive(true);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(false);
+            femaleFitYoung.SetActive(false);
+            femaleSlimYoung.SetActive(false);
+            femaleChubbyYoung.SetActive(false);
+            maleFitOld.SetActive(false);
+            maleSlimOld.SetActive(false);
+            maleChubbyOld.SetActive(false);
+            maleFitYoung.SetActive(false);
+            maleSlimYoung.SetActive(false);
+            maleChubbyYoung.SetActive(false);
         }
 
-        else if (maleSlim.activeInHierarchy == true)
+        else if (maleSlimOld.activeInHierarchy == true)
         {
-            femaleFit.SetActive(false);
-            femaleSlim.SetActive(true);
-            femaleChubby.SetActive(false);
-            maleFit.SetActive(false);
-            maleSlim.SetActive(false);
-            maleChubby.SetActive(false);
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(true);
+            femaleChubbyOld.SetActive(false);
+            femaleFitYoung.SetActive(false);
+            femaleSlimYoung.SetActive(false);
+            femaleChubbyYoung.SetActive(false);
+            maleFitOld.SetActive(false);
+            maleSlimOld.SetActive(false);
+            maleChubbyOld.SetActive(false);
+            maleFitYoung.SetActive(false);
+            maleSlimYoung.SetActive(false);
+            maleChubbyYoung.SetActive(false);
         }
 
-        else if (maleChubby.activeInHierarchy == true)
+        else if (maleChubbyOld.activeInHierarchy == true)
         {
-            femaleFit.SetActive(false);
-            femaleSlim.SetActive(false);
-            femaleChubby.SetActive(true);
-            maleFit.SetActive(false);
-            maleSlim.SetActive(false);
-            maleChubby.SetActive(false);
+            femaleFitOld.SetActive(false);
+            femaleSlimOld.SetActive(false);
+            femaleChubbyOld.SetActive(true);
+            femaleFitYoung.SetActive(false);
+            femaleSlimYoung.SetActive(false);
+            femaleChubbyYoung.SetActive(false);
+            maleFitOld.SetActive(false);
+            maleSlimOld.SetActive(false);
+            maleChubbyOld.SetActive(false);
+            maleFitYoung.SetActive(false);
+            maleSlimYoung.SetActive(false);
+            maleChubbyYoung.SetActive(false);
         }
+
     }
 }
